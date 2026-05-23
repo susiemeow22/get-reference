@@ -1,1 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>呼吸文献速递</title>
+    
+    <!-- iOS 优化：添加到主屏幕后像原生 App 一样 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="呼吸文献">
+    
+    <!-- 引入样式和框架 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+    <style>
+        body { background-color: #f6f6f6; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        
+        /* 小红书风格瀑布流 */
+        .feed-container {
+            column-count: 2;
+            column-gap: 10px;
+            padding: 10px;
+        }
+        
+        .card {
+            break-inside: avoid;
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
 
+        .line-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* 点击卡片的反馈效果 */
+        .card:active {
+            transform: scale(0.98);
+            transition: transform 0.1s;
+        }
+
+        /* 顶部毛玻璃导航栏 */
+        header {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!-- 导航栏 -->
+        <header class="sticky top-0 z-50 border-b border-gray-100 px-4 py-3 text-center">
+            <h1 class="text-lg font-bold text-gray-800 flex items-center justify-center gap-2">
+                <span class="text-red-500">🫁</span> 呼吸文献精选
+            </h1>
+        </header>
+
+        <!-- 加载状态 -->
+        <div v-if="loading" class="flex flex-col items-center justify-center py-20 text-gray-400">
+            <div class="animate-spin text-2xl mb-2">🔄</div>
+            <p class="text-sm">正在获取最新文献...</p>
+        </div>
+
+        <!-- 空状态 -->
+        <div v-if="!loading && papers.length === 0" class="p-10 text-center text-gray-400 text-sm">
+            暂时没有搜到近 30 天的相关文献
+        </div>
+
+        <!-- 文献卡片流 -->
+        <main class="feed-container">
+            <div v-for="(paper, index) in papers" :key="index" class="card" @click="openUrl(paper.link)">
+                <div class="p-3">
+                    <!-- 杂志 -->
+                    <div class="text-[10px] text-blue-500 font-bold uppercase mb-1.5 tracking-tight">
+                        {{ paper.journal }}
+                    </div>
+                    <!-- 标题 -->
+                    <h2 class="text-[14px] font-bold leading-snug text-gray-900 mb-2 line-clamp-3">
+                        {{ paper.title }}
+                    </h2>
+                    <!-- AI总结区 -->
+                    <div class="bg-red-50 rounded-lg p-2 mb-2">
+                        <p class="text-[12px] text-red-700 leading-normal">
+                            <span class="font-bold">✨ AI核心：</span>{{ paper.summary }}
+                        </p>
+                    </div>
+                    <!-- 底部信息 -->
+                    <div class="flex justify-between items-center text-[10px] text-gray-400 mt-1">
+                        <span class="truncate w-20">{{ paper.authors.split(',')[0] }} 等</span>
+                        <span>{{ paper.date.split(' ')[0] }}</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const { createApp, ref, onMounted } = Vue;
+
+        createApp({
+            setup() {
+                const papers = ref([]);
+                const loading = ref(true);
+
+                const loadData = async () => {
+                    try {
+                        // 强制不缓存，确保能看到最新更新
+                        const response = await fetch('./data.json?t=' + new Date().getTime());
+                        if (!response.ok) throw new Error('数据文件不存在');
+                        const data = await response.json();
+                        papers.value = data;
+                    } catch (err) {
+                        console.error("加载失败:", err);
+                    } finally {
+                        loading.value = false;
+                    }
+                };
+
+                const openUrl = (url) => {
+                    window.open(url, '_blank');
+                };
+
+                onMounted(loadData);
+
+                return { papers, loading, openUrl };
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>
