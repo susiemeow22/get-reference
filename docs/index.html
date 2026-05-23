@@ -7,81 +7,51 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <style>
-        body { background-color: #f8fafc; color: #1e293b; }
-        .container { max-width: 600px; margin: 0 auto; padding-bottom: 40px; }
-        .card {
-            background: white;
-            border-radius: 24px;
-            margin: 16px;
-            padding: 24px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
-            border: 1px solid rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-        }
-        .card:active { transform: scale(0.98); }
-        .journal-tag {
-            background: #e0f2fe;
-            color: #0369a1;
-            font-size: 11px;
-            font-weight: 800;
-            padding: 4px 10px;
-            border-radius: 8px;
-            text-transform: uppercase;
-        }
-        .ai-summary {
-            background: #fff7ed;
-            border-left: 5px solid #f97316;
-            padding: 16px;
-            border-radius: 12px;
-            font-size: 15px;
-            line-height: 1.6;
-            color: #7c2d12;
-            margin: 18px 0;
-        }
+        body { background-color: #f4f6f9; }
+        .nav-item { position: relative; transition: all 0.3s; }
+        .nav-item.active { color: #ef4444; font-weight: 800; }
+        .nav-item.active::after { content: ''; position: absolute; bottom: -8px; left: 25%; width: 50%; height: 3px; background: #ef4444; border-radius: 10px; }
+        .card { background: white; border-radius: 20px; margin: 15px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .ai-summary { background: #fff7f6; border-left: 4px solid #ff4d4f; padding: 12px; border-radius: 8px; font-size: 14px; color: #cf1322; line-height: 1.6; margin: 15px 0; }
     </style>
 </head>
 <body>
-    <div id="app" class="container">
-        <!-- 头部 -->
-        <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-xl px-6 py-5 border-b border-gray-100">
-            <h1 class="text-2xl font-black text-gray-900 tracking-tight">🫁 呼吸文献精选</h1>
-            <p class="text-xs text-gray-400 mt-1 uppercase font-bold tracking-widest">Recent Advancements</p>
+    <div id="app">
+        <!-- 导航栏 -->
+        <header class="sticky top-0 bg-white/95 backdrop-blur-md z-50 shadow-sm">
+            <div class="px-6 py-4 flex justify-between items-center border-b border-gray-50">
+                <h1 class="text-xl font-black text-gray-900">呼吸文献精选</h1>
+            </div>
+            <!-- 分类切换 -->
+            <div class="flex justify-around py-3 px-2 text-sm text-gray-500 font-medium overflow-x-auto whitespace-nowrap">
+                <div v-for="(list, name) in allData" 
+                     :key="name" 
+                     @click="currentCategory = name"
+                     :class="['nav-item', {active: currentCategory === name}]">
+                    {{ name }}
+                </div>
+            </div>
         </header>
 
-        <!-- 加载动画 -->
-        <div v-if="loading" class="flex flex-col items-center justify-center py-32 space-y-4">
-            <div class="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-            <p class="text-gray-400 font-medium">正在获取 AI 总结...</p>
-        </div>
-
-        <!-- 卡片流 -->
-        <main v-else>
-            <div v-for="(paper, index) in papers" :key="index" class="card" @click="window.open(paper.link, '_blank')">
-                <div class="flex justify-between items-center mb-4">
-                    <span class="journal-tag">{{ paper.journal }}</span>
-                    <span class="text-[11px] text-gray-400 font-medium">{{ paper.date.split(' ')[0] }}</span>
+        <!-- 内容区 -->
+        <div v-if="loading" class="text-center py-20 text-gray-400">正在抓取最新文献...</div>
+        
+        <main v-else class="max-w-2xl mx-auto pt-2">
+            <div v-for="paper in allData[currentCategory]" 
+                 :key="paper.link" 
+                 class="card active:scale-[0.98] transition-transform"
+                 @click="window.open(paper.link, '_blank')">
+                <div class="flex justify-between text-[10px] font-bold text-blue-500 uppercase mb-2">
+                    <span>{{ paper.journal }}</span>
+                    <span class="text-gray-300">{{ paper.date.split(' ')[0] }}</span>
                 </div>
-
-                <h2 class="text-lg font-bold leading-tight text-gray-900 mb-4">
-                    {{ paper.title }}
-                </h2>
-
-                <div class="ai-summary">
-                    <div class="flex items-center gap-2 mb-1">
-                        <span class="text-lg">✨</span>
-                        <span class="font-bold text-orange-800 text-sm">AI 核心结论</span>
-                    </div>
-                    {{ paper.summary }}
+                <h2 class="text-lg font-bold leading-tight text-gray-800 mb-3">{{ paper.title }}</h2>
+                <div class="ai-summary text-sm">
+                    <strong>✨ AI 核心结论：</strong><br>{{ paper.summary }}
                 </div>
-
-                <div class="flex justify-between items-center mt-4">
-                    <div class="flex items-center gap-2">
-                        <div class="w-6 h-6 bg-gray-100 rounded-full flex items-center justify-center text-[10px] font-bold text-gray-500">
-                            {{ paper.authors ? paper.authors[0] : 'A' }}
-                        </div>
-                        <span class="text-xs text-gray-500 italic">{{ paper.authors.split(',')[0] }} 等</span>
-                    </div>
-                    <span class="text-blue-600 font-bold text-xs uppercase tracking-wider">Read Full →</span>
+                <div class="text-[11px] text-gray-400 flex justify-between items-center">
+                    <span>{{ paper.authors.split(',')[0] }} 等</span>
+                    <span class="text-blue-600 font-bold">查看原文 →</span>
                 </div>
             </div>
         </main>
@@ -91,19 +61,18 @@
         const { createApp, ref, onMounted } = Vue;
         createApp({
             setup() {
-                const papers = ref([]);
+                const allData = ref({});
+                const currentCategory = ref('肺纤维化');
                 const loading = ref(true);
+
                 onMounted(async () => {
-                    try {
-                        const res = await fetch('./data.json?t=' + new Date().getTime());
-                        papers.value = await res.json();
-                    } catch (e) {
-                        console.error("加载失败", e);
-                    } finally {
-                        loading.value = false;
-                    }
+                    const res = await fetch('./data.json?t=' + new Date().getTime());
+                    allData.value = await res.json();
+                    // 设置第一个存在的分类为默认
+                    currentCategory.value = Object.keys(allData.value)[0];
+                    loading.value = false;
                 });
-                return { papers, loading };
+                return { allData, currentCategory, loading };
             }
         }).mount('#app')
     </script>
