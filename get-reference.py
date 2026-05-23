@@ -1,86 +1,114 @@
-import os
-import json
-from Bio import Entrez, Medline
-import google.generativeai as genai
-
-# --- 1. 配置信息 ---
-Entrez.email = "susiemeow22@outlook.com" 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
-genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
-
-SEARCH_QUERY = '("Pulmonary Fibrosis"[Title/Abstract] OR "Bronchoscopy"[Title/Abstract]) AND ("last 30 days"[DP])'
-
-def fetch_recent_papers():
-    print("🚀 开始从 PubMed 检索文献...")
-    handle = Entrez.esearch(db="pubmed", term=SEARCH_QUERY, retmax=15, sort="relevance")
-    record = Entrez.read(handle)
-    handle.close()
-    id_list = record["IdList"]
-
-    if not id_list:
-        print("❌ 未找到相关文献。")
-        return
-
-    handle = Entrez.efetch(db="pubmed", id=id_list, rettype="medline", retmode="text")
-    records = list(Medline.parse(handle))
-    handle.close()
-
-    # --- 批量准备数据 ---
-    batch_prompt_content = ""
-    paper_data_list = []
-
-    for i, record in enumerate(records):
-        title = record.get("TI", "No Title")
-        abstract = record.get("AB", "No Abstract")
-        journal = record.get("TA", "No Journal")
-        pub_date = record.get("DP", "No Date")
-        pmid = record.get("PMID", "")
-        authors = ", ".join(record.get("AU", []))
-        
-        paper_data_list.append({
-            "title": title,
-            "journal": journal,
-            "date": pub_date,
-            "authors": authors,
-            "link": f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/"
-        })
-        # 拼接给 AI 的内容
-        batch_prompt_content += f"文献 {i+1}:\n标题: {title}\n摘要: {abstract}\n\n"
-
-    # --- 一次性调用 Gemini ---
-    print(f"🤖 正在请 Gemini 批量总结 {len(paper_data_list)} 篇文献...")
-    full_prompt = f"""
-    你是一个呼吸医学专家。请为以下多篇文献分别写一句话中文核心结论。
-    要求：
-    1. 每篇文献的总结不超过40个字。
-    2. 按顺序排列，格式为：“1. [总结内容]”、“2. [总结内容]”。
-    3. 直接给结论，不要解释。
-
-    {batch_prompt_content}
-    """
-
-    try:
-        response = model.generate_content(full_prompt)
-        summaries = response.text.strip().split('\n')
-        # 简单的结果匹配
-        for i, paper in enumerate(paper_data_list):
-            # 找到对应序号的内容
-            summary_line = [s for s in summaries if s.startswith(f"{i+1}.")]
-            if summary_line:
-                paper["summary"] = summary_line[0].replace(f"{i+1}. ", "").strip()
-            else:
-                paper["summary"] = "点击查看详情。"
-    except Exception as e:
-        print(f"AI 批量总结出错: {e}")
-        for paper in paper_data_list: paper["summary"] = "总结生成失败。"
-
-    # --- 保存结果 ---
-    if not os.path.exists('docs'): os.makedirs('docs')
-    with open('docs/data.json', 'w', encoding='utf-8') as f:
-        json.dump(paper_data_list, f, ensure_ascii=False, indent=4)
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>呼吸文献速递</title>
     
-    print(f"✅ 搞定！数据已更新至 docs/data.json")
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+    <style>
+        body { background-color: #f0f2f5; }
+        .container { max-width: 600px; margin: 0 auto; }
+        .card {
+            background: white;
+            border-radius: 16px;
+            margin: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        /* 标题限制在 3 行 */
+        .title-clamp {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div id="app" class="container">
+        <!-- 顶部导航 -->
+        <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 py-4 px-6">
+            <h1 class="text-xl font-extrabold text-gray-900 tracking-tight">🫁 呼吸文献精选</h1>
+            <p class="text-[10px] text-gray-400 uppercase mt-1">Pulmonary Fibrosis & Bronchoscopy</p>
+        </header>
 
-if __name__ == "__main__":
-    fetch_recent_papers()
+        <!-- 加载提示 -->
+        <div v-if="loading" class="text-center py-20 text-gray-400">
+            <div class="animate-bounce text-3xl mb-2">🔄</div>
+            <p>正在同步云端文献...</p>
+        </div>
+
+        <!-- 列表 -->
+        <main v-else>
+            <div v-for="(paper, index) in papers" :key="index" class="card" @click="openUrl(paper.link)">
+                <!-- 杂志和日期 -->
+                <div class="flex justify-between items-center mb-3">
+                    <span class="bg-blue-100 text-blue-700 text-[10px] px-2 py-1 rounded font-bold uppercase">
+                        {{ paper.journal }}
+                    </span>
+                    <span class="text-xs text-gray-400">{{ paper.date.split(' ')[0] }}</span>
+                </div>
+
+                <!-- 标题 -->
+                <h2 class="title-clamp font-bold text-gray-900 mb-4">
+                    {{ paper.title }}
+                </h2>
+
+                <!-- AI 总结：单列布局下可以放更多文字 -->
+                <div class="bg-orange-50 border-l-4 border-orange-400 p-4 mb-4">
+                    <p class="text-[14px] text-orange-900 leading-relaxed italic">
+                        “ {{ paper.summary }} ”
+                    </p>
+                </div>
+
+                <!-- 作者和链接按钮 -->
+                <div class="flex justify-between items-end">
+                    <div class="text-[11px] text-gray-500 italic w-2/3">
+                        {{ paper.authors.split(',').slice(0, 2).join(', ') }} 等
+                    </div>
+                    <button class="text-xs font-bold text-blue-600 border border-blue-600 px-3 py-1 rounded-full active:bg-blue-50">
+                        查看原文
+                    </button>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="py-10 text-center text-gray-300 text-xs">
+            已加载全部内容
+        </footer>
+    </div>
+
+    <script>
+        const { createApp, ref, onMounted } = Vue;
+        createApp({
+            setup() {
+                const papers = ref([]);
+                const loading = ref(true);
+
+                const loadData = async () => {
+                    try {
+                        const response = await fetch('./data.json?t=' + new Date().getTime());
+                        papers.value = await response.json();
+                    } catch (err) {
+                        console.error(err);
+                    } finally {
+                        loading.value = false;
+                    }
+                };
+
+                const openUrl = (url) => window.open(url, '_blank');
+                onMounted(loadData);
+                return { papers, loading, openUrl };
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>
