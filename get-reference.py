@@ -1,114 +1,74 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>呼吸文献速递</title>
+import os
+import json
+import time
+from Bio import Entrez, Medline
+import google.generativeai as genai
+
+# --- 1. 配置信息 ---
+Entrez.email = "你的邮箱@example.com" 
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+
+if not GEMINI_API_KEY:
+    print("❌ 错误: 未找到 GEMINI_API_KEY，请检查 GitHub Secrets 设置")
+else:
+    genai.configure(api_key=GEMINI_API_KEY)
+    model = genai.GenerativeModel('gemini-1.5-flash')
+
+SEARCH_QUERY = '("Pulmonary Fibrosis"[Title/Abstract] OR "Bronchoscopy"[Title/Abstract]) AND ("last 30 days"[DP])'
+
+def fetch_recent_papers():
+    print("🚀 开始从 PubMed 检索文献...")
+    handle = Entrez.esearch(db="pubmed", term=SEARCH_QUERY, retmax=10, sort="relevance")
+    record = Entrez.read(handle)
+    handle.close()
+    id_list = record["IdList"]
+
+    if not id_list:
+        print("❌ 未找到相关文献。")
+        return
+
+    handle = Entrez.efetch(db="pubmed", id=id_list, rettype="medline", retmode="text")
+    records = list(Medline.parse(handle))
+    handle.close()
+
+    paper_data_list = []
     
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    
-    <style>
-        body { background-color: #f0f2f5; }
-        .container { max-width: 600px; margin: 0 auto; }
-        .card {
-            background: white;
-            border-radius: 16px;
-            margin: 12px;
-            padding: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        }
-        /* 标题限制在 3 行 */
-        .title-clamp {
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            font-size: 1.1rem;
-            line-height: 1.4;
-        }
-    </style>
-</head>
-<body>
-    <div id="app" class="container">
-        <!-- 顶部导航 -->
-        <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 py-4 px-6">
-            <h1 class="text-xl font-extrabold text-gray-900 tracking-tight">🫁 呼吸文献精选</h1>
-            <p class="text-[10px] text-gray-400 uppercase mt-1">Pulmonary Fibrosis & Bronchoscopy</p>
-        </header>
-
-        <!-- 加载提示 -->
-        <div v-if="loading" class="text-center py-20 text-gray-400">
-            <div class="animate-bounce text-3xl mb-2">🔄</div>
-            <p>正在同步云端文献...</p>
-        </div>
-
-        <!-- 列表 -->
-        <main v-else>
-            <div v-for="(paper, index) in papers" :key="index" class="card" @click="openUrl(paper.link)">
-                <!-- 杂志和日期 -->
-                <div class="flex justify-between items-center mb-3">
-                    <span class="bg-blue-100 text-blue-700 text-[10px] px-2 py-1 rounded font-bold uppercase">
-                        {{ paper.journal }}
-                    </span>
-                    <span class="text-xs text-gray-400">{{ paper.date.split(' ')[0] }}</span>
-                </div>
-
-                <!-- 标题 -->
-                <h2 class="title-clamp font-bold text-gray-900 mb-4">
-                    {{ paper.title }}
-                </h2>
-
-                <!-- AI 总结：单列布局下可以放更多文字 -->
-                <div class="bg-orange-50 border-l-4 border-orange-400 p-4 mb-4">
-                    <p class="text-[14px] text-orange-900 leading-relaxed italic">
-                        “ {{ paper.summary }} ”
-                    </p>
-                </div>
-
-                <!-- 作者和链接按钮 -->
-                <div class="flex justify-between items-end">
-                    <div class="text-[11px] text-gray-500 italic w-2/3">
-                        {{ paper.authors.split(',').slice(0, 2).join(', ') }} 等
-                    </div>
-                    <button class="text-xs font-bold text-blue-600 border border-blue-600 px-3 py-1 rounded-full active:bg-blue-50">
-                        查看原文
-                    </button>
-                </div>
-            </div>
-        </main>
+    # --- 逐篇处理 (改为单篇处理更稳定，避开批量解析错误) ---
+    for record in records:
+        title = record.get("TI", "No Title")
+        abstract = record.get("AB", "No Abstract")
+        journal = record.get("TA", "No Journal")
+        pub_date = record.get("DP", "No Date")
+        pmid = record.get("PMID", "")
+        authors = ", ".join(record.get("AU", []))
         
-        <footer class="py-10 text-center text-gray-300 text-xs">
-            已加载全部内容
-        </footer>
-    </div>
+        print(f"📄 正在处理: {title[:50]}...")
+        
+        summary = "无摘要，点击查看原文。"
+        if abstract != "No Abstract":
+            try:
+                prompt = f"你是一个呼吸医学专家。请用中文一句话概括这篇文献的核心结论（40字以内）：\n标题: {title}\n摘要: {abstract}"
+                response = model.generate_content(prompt)
+                summary = response.text.strip()
+                time.sleep(2) # 免费版加一点点延迟，防止被封
+            except Exception as e:
+                print(f"⚠️ AI 总结失败原因: {e}")
+                summary = "AI 总结生成失败，请检查 API 状态。"
 
-    <script>
-        const { createApp, ref, onMounted } = Vue;
-        createApp({
-            setup() {
-                const papers = ref([]);
-                const loading = ref(true);
+        paper_data_list.append({
+            "title": title,
+            "journal": journal,
+            "date": pub_date,
+            "authors": authors,
+            "link": f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/",
+            "summary": summary
+        })
 
-                const loadData = async () => {
-                    try {
-                        const response = await fetch('./data.json?t=' + new Date().getTime());
-                        papers.value = await response.json();
-                    } catch (err) {
-                        console.error(err);
-                    } finally {
-                        loading.value = false;
-                    }
-                };
+    # --- 保存结果 ---
+    os.makedirs('docs', exist_ok=True)
+    with open('docs/data.json', 'w', encoding='utf-8') as f:
+        json.dump(paper_data_list, f, ensure_ascii=False, indent=4)
+    print(f"✅ 搞定！共处理 {len(paper_data_list)} 篇文献。")
 
-                const openUrl = (url) => window.open(url, '_blank');
-                onMounted(loadData);
-                return { papers, loading, openUrl };
-            }
-        }).mount('#app');
-    </script>
-</body>
-</html>
+if __name__ == "__main__":
+    fetch_recent_papers()
