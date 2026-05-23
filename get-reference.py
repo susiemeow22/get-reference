@@ -5,7 +5,7 @@ import google.generativeai as genai
 
 # --- 1. 配置信息 ---
 Entrez.email = "susiemeow22@outlook.com" 
-GEMINI_API_KEY = "AIzaSyDY7CQwqjvByzqV5jbMykHF-MN7S8-ZH-4"
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel('gemini-1.5-flash')
 
