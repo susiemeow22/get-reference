@@ -1,4 +1,5 @@
-name: Update Literature Daily
+name: Install
+        run: pip install --upgrade biopython google-generativeai
 on:
   schedule:
     - cron: '0 0 * * *'
