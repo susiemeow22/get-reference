@@ -1,82 +1,82 @@
 [
     {
-        "title": "Inflammation-driven mitochondrial dysfunction and ROS accumulation orchestrate pulmonary fibrotic remodeling in sepsis.",
-        "journal": "Redox Biol",
-        "date": "2026 May 16",
-        "authors": "Zhong Z, Wu K, Wang J, Chen G, Luo H, Chen G, Sun C, Guo D, Li L, Li L, Jiang Y",
-        "link": "https://pubmed.ncbi.nlm.nih.gov/42172723/",
-        "summary": "AI总结暂时不可用 (报错:404 models/gemini-1.)"
+        "title": "Progressive pulmonary fibrosis.",
+        "journal": "Eur Radiol",
+        "date": "2026 May",
+        "authors": "Bajwa R, Lancaster D, Desai SR, George PM",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/41417118/",
+        "summary": "总结生成失败 (404 models/gemini-1.)"
     },
     {
-        "title": "Pediatric pulmonologists' current practices and variations in flexible bronchoscopy: a national survey study from Turkiye.",
-        "journal": "Turk J Pediatr",
+        "title": "Elevated lactate production exacerbates PM2.5-induced pulmonary fibrosis by stabilizing TGF-beta1.",
+        "journal": "J Adv Res",
+        "date": "2026 May",
+        "authors": "Liu Z, Liu W, Wei H, Ping Y, Yu Z, Dong Z, Ren J, Zhang S, Liu S",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/40759348/",
+        "summary": "总结生成失败 (404 models/gemini-1.)"
+    },
+    {
+        "title": "Deep-learning-based de novo discovery and design of therapeutics that reverse disease-associated transcriptional phenotypes.",
+        "journal": "Cell",
         "date": "2026 Apr 30",
-        "authors": "Ocak E, Basaran E, Cakir E, Cobanoglu N, Ergenekon P, Eryilmaz Polat S, Girit S, Kartal Ozturk G, Kilinc AA, Kose M, Ozdemir A, Ozsezen B, Pekcan S, Sen V, Sismanlar Eyuboglu T, Uyan ZS, Unal F, Yalcin E, Yuksel H, Gulen F",
-        "link": "https://pubmed.ncbi.nlm.nih.gov/42172461/",
-        "summary": "AI总结暂时不可用 (报错:404 models/gemini-1.)"
+        "authors": "Xing J, Tan M, Leshchiner D, Sun M, Abdelgied M, Huang L, Paithankar S, Uhl K, Shankar R, Lisabeth E, Aleiwi B, Jager T, Lawson C, Chen R, Giletto M, Girgis R, Neubig RR, So S, Ellsworth E, Li X, Chua MS, Zhou J, Chen B",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/41850287/",
+        "summary": "总结生成失败 (404 models/gemini-1.)"
     },
     {
-        "title": "Ac-SDKP Attenuates Silica-Induced Pulmonary Fibrosis by Inhibiting ALKBH1-Mediated m(6)A Demethylation of miR-129-5p.",
-        "journal": "FASEB J",
-        "date": "2026 May 31",
-        "authors": "Li Q, Du J, Yi X, Li S, Yang Y, Wang X, Xu Z, Jin F, Li T, Li Y, Xu D, Wei Z, Cai W, Mao N, Zhang L, Yu X, Shi Y, Yang F, Xu H, Gao X",
-        "link": "https://pubmed.ncbi.nlm.nih.gov/42172441/",
-        "summary": "AI总结暂时不可用 (报错:404 models/gemini-1.)"
-    },
-    {
-        "title": "Clinical feasibility study of generative depth estimation to diagnose airway stenosis using 3D slicer.",
-        "journal": "Int J Comput Assist Radiol Surg",
-        "date": "2026 May 22",
-        "authors": "Banach A, Naito M, King F, Masaki F, Tsukada H, Hata N",
-        "link": "https://pubmed.ncbi.nlm.nih.gov/42171651/",
-        "summary": "AI总结暂时不可用 (报错:404 models/gemini-1.)"
-    },
-    {
-        "title": "Occupational physical workload and risk of lung cancer and chronic respiratory diseases: a prospective cohort study of the UK Biobank.",
-        "journal": "Transl Lung Cancer Res",
-        "date": "2026 Apr 30",
-        "authors": "Ma S, Liu Y, Wang Z, Shi X, Yi M, Liu L",
-        "link": "https://pubmed.ncbi.nlm.nih.gov/42170266/",
-        "summary": "AI总结暂时不可用 (报错:404 models/gemini-1.)"
-    },
-    {
-        "title": "Mid-term efficacy and safety of transbronchial cryoablation for stage IA peripheral lung cancer: a retrospective analysis.",
-        "journal": "Transl Lung Cancer Res",
-        "date": "2026 Apr 30",
-        "authors": "Yang R, Chen J, Xie F, Gu C, Hong S, Zhu H, Jiang Y, Sun J",
-        "link": "https://pubmed.ncbi.nlm.nih.gov/42170263/",
-        "summary": "AI总结暂时不可用 (报错:404 models/gemini-1.)"
-    },
-    {
-        "title": "Reparative \"exosome-ark\" for mitochondrial transplantation to reprogram macrophages and disrupt pathogenic crosstalk in pulmonary fibrosis.",
-        "journal": "Mater Today Bio",
+        "title": "The immunodynamics of pulmonary fibrosis.",
+        "journal": "Cytokine Growth Factor Rev",
         "date": "2026 Jun",
-        "authors": "Zhang XY, Liu YN, Wang B, Zhang CG, Cheng HQ, Yang XR, Wan JH, Sheng XC, Guo B, Jiang HL, Chang X",
-        "link": "https://pubmed.ncbi.nlm.nih.gov/42170237/",
-        "summary": "AI总结暂时不可用 (报错:404 models/gemini-1.)"
+        "authors": "Xie C, Ma Y, Wang Y, Gul A, Tang W, Luo Q, Xu W, Wei Y, Dong J, Liu W",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/41999680/",
+        "summary": "总结生成失败 (404 models/gemini-1.)"
     },
     {
-        "title": "Efficacy of pulmonary rehabilitation combined with minimal-dose adjunctive TCM (Shen Yi Capsules and Hua Chan Su) in improving postoperative outcomes for non-small cell lung cancer: a randomized controlled trial.",
-        "journal": "Front Med (Lausanne)",
-        "date": "2026",
-        "authors": "Chunyan G, Fengshuang W, Mei L, Zhiqun C, Dongmei H",
-        "link": "https://pubmed.ncbi.nlm.nih.gov/42169794/",
-        "summary": "AI总结暂时不可用 (报错:404 models/gemini-1.)"
+        "title": "Nerandomilast for Idiopathic Pulmonary Fibrosis and Progressive Pulmonary Fibrosis: Clinical Efficacy, Safety, and Place in Therapy.",
+        "journal": "Ann Pharmacother",
+        "date": "2026 May 18",
+        "authors": "Bui PT, St Onge E, Sotolongo-Miranda H, Trabulsi T",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/42145068/",
+        "summary": "总结生成失败 (404 models/gemini-1.)"
     },
     {
-        "title": "Pyroptosis, A Double-Edged Sword in Respiratory Diseases: A Narrative Review.",
-        "journal": "J Inflamm Res",
-        "date": "2026",
-        "authors": "Yu C, Dai C, Zhu L",
-        "link": "https://pubmed.ncbi.nlm.nih.gov/42169747/",
-        "summary": "AI总结暂时不可用 (报错:404 models/gemini-1.)"
+        "title": "The transcriptome of CD14(+)CD163(-)HLA-DR(low) monocytes predicts mortality in idiopathic pulmonary fibrosis.",
+        "journal": "Eur Respir J",
+        "date": "2026 May",
+        "authors": "Karampitsakos T, Jia M, Tourki B, Fatima Z, Visinescu B, Perrot CY, Fadli T, Zhao A, Unterman A, Schneider MA, Bandyopadhyay D, Juan-Guardela BM, Vamvakaris I, Prasse A, Noth I, Liggett S, Kreuter M, Drake W, Tzouvelekis A, Garcia JGN, Herzog E, Kaminski N, Benos PV, Herazo-Maya JD",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/41360505/",
+        "summary": "总结生成失败 (404 models/gemini-1.)"
     },
     {
-        "title": "[Corrigendum] Activated Wnt signaling induces myofibroblast differentiation of mesenchymal stem cells, contributing to pulmonary fibrosis.",
-        "journal": "Int J Mol Med",
-        "date": "2026 Jul",
-        "authors": "Sun Z, Wang C, Shi C, Sun F, Xu X, Qian W, Nie S, Han X",
-        "link": "https://pubmed.ncbi.nlm.nih.gov/42169658/",
-        "summary": "AI总结暂时不可用 (报错:404 models/gemini-1.)"
+        "title": "PIEZO1 regulates smooth muscle cell plasticity by integrating mechanical stretch with glycolytic metabolism.",
+        "journal": "Cardiovasc Res",
+        "date": "2026 Apr 28",
+        "authors": "Cao Y, Xu L, Zhang M, Su A, Wang S, Li T, Liu S, Mao Z, He Y, Shao Z, Zhang J, Wang Y, Tian H, Sun Y, Li Y, Yan L, Zhang G, Sun S, Mei N, Chen F, Xiong Y, Liang G, Offermanns S, Yan Y, Yuan Z, Wang S",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/41846580/",
+        "summary": "总结生成失败 (404 models/gemini-1.)"
+    },
+    {
+        "title": "Cx3cr1 depletion ameliorates lipid metabolic dysregulation and pulmonary fibrosis induced by silica.",
+        "journal": "Chem Biol Interact",
+        "date": "2026 May 25",
+        "authors": "Hu E, Wang Y, Li Z, Zhang J, Huang W, Shen J, Liu D, Zhu Z, Tian L, Wang Y",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/41763510/",
+        "summary": "总结生成失败 (404 models/gemini-1.)"
+    },
+    {
+        "title": "Vanadium Exposure Promotes Pulmonary Fibrosis via Crosstalk between cGAS-STING/NF-kappaB and Wnt Signaling in Ducks.",
+        "journal": "Free Radic Biol Med",
+        "date": "2026 May 16",
+        "authors": "Chu X, Pan J, Yang Y, Chen J, Chen H, Dai X, Xing C, Li H, Hu M, Yang F",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/42144027/",
+        "summary": "总结生成失败 (404 models/gemini-1.)"
+    },
+    {
+        "title": "Artificial Intelligence in Pediatric Bronchoscopy: Current Evidence and Future Perspectives.",
+        "journal": "Pediatr Pulmonol",
+        "date": "2026 May",
+        "authors": "Stafler P, Less Elazari S",
+        "link": "https://pubmed.ncbi.nlm.nih.gov/42145187/",
+        "summary": "总结生成失败 (404 models/gemini-1.)"
     }
 ]
