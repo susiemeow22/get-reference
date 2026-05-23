@@ -1,31 +1,66 @@
-name: Install
-        run: pip install --upgrade biopython google-generativeai
-on:
-  schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.9'
-      - name: Install
-        run: pip install biopython google-generativeai
-      - name: Run
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python get-reference.py
-      - name: Push
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data.json
-          git commit -m "update" || exit 0
-          git push
+import os
+import json
+import time
+from Bio import Entrez, Medline
+import google.generativeai as genai
+
+Entrez.email = "medical_app@test.com"
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+
+def main():
+    if not GEMINI_API_KEY:
+        print("❌ 未发现 API KEY")
+        return
+
+    genai.configure(api_key=GEMINI_API_KEY)
+    
+    # 自动获取可用模型
+    try:
+        available = [m.name for m in genai.list_models() if 'generateContent' in m.supported_generation_methods]
+        print(f"✅ 可用模型: {available}")
+        # 寻找 1.5-flash，找不到就用列表第一个
+        target = next((m for m in available if 'gemini-1.5-flash' in m), available[0])
+    except:
+        target = 'models/gemini-1.5-flash'
+    
+    print(f"🤖 选定模型: {target}")
+    model = genai.GenerativeModel(target)
+
+    # 检索
+    query = '("Pulmonary Fibrosis"[Title/Abstract] OR "Bronchoscopy"[Title/Abstract]) AND ("last 30 days"[DP])'
+    handle = Entrez.esearch(db="pubmed", term=query, retmax=10)
+    record = Entrez.read(handle)
+    handle.close()
+    
+    paper_list = []
+    if record["IdList"]:
+        fetch_handle = Entrez.efetch(db="pubmed", id=record["IdList"], rettype="medline", retmode="text")
+        records = list(Medline.parse(fetch_handle))
+        fetch_handle.close()
+
+        for r in records:
+            title = r.get("TI", "No Title")
+            abstract = r.get("AB", "")
+            summary = "无摘要内容。"
+            if abstract:
+                try:
+                    res = model.generate_content(f"总结文献结论(40字内): {abstract[:1500]}")
+                    summary = res.text.strip()
+                except Exception as e:
+                    summary = f"AI总结暂时不可用 ({str(e)[:20]})"
+            
+            paper_list.append({
+                "title": title, "journal": r.get("TA", "Unknown"),
+                "date": r.get("DP", "No Date"), "authors": ", ".join(r.get("AU", [])),
+                "link": f"https://pubmed.ncbi.nlm.nih.gov/{r.get('PMID')}/",
+                "summary": summary
+            })
+            time.sleep(1)
+
+    os.makedirs('docs', exist_ok=True)
+    with open('docs/data.json', 'w', encoding='utf-8') as f:
+        json.dump(paper_list, f, ensure_ascii=False, indent=4)
+    print("✅ 完成")
+
+if __name__ == "__main__":
+    main()
