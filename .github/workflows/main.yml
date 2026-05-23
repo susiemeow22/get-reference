@@ -1,0 +1,36 @@
+name: Update Literature Daily
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 每天凌晨 0:00 (UTC) 自动运行，约北京时间早上 8 点
+  workflow_dispatch:   # 允许手动点击按钮运行
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run Python script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python get-reference.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add docs/data.json
+          git commit -m "Auto-update literature" || exit 0
+          git push
