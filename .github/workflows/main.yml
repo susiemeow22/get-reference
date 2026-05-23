@@ -2,8 +2,8 @@ name: Update Literature Daily
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 每天凌晨 0:00 (UTC) 自动运行，约北京时间早上 8 点
-  workflow_dispatch:   # 允许手动点击按钮运行
+    - cron: '0 0 * * *' 
+  workflow_dispatch: 
 
 jobs:
   build:
@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # 更新到了 v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5 # 更新到了 v5
         with:
           python-version: '3.9'
 
@@ -29,8 +29,13 @@ jobs:
 
       - name: Commit and Push changes
         run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/data.json
-          git commit -m "Auto-update literature" || exit 0
-          git push
+          # 检查是否有内容更改，防止没更新时报错
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-update literature: $(date)"
+            git push
+          fi
