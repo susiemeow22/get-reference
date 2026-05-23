@@ -1,37 +1,69 @@
-name: Update Literature Daily
+import os
+import json
+import time
+from Bio import Entrez, Medline
+import google.generativeai as genai
 
-on:
-  schedule:
-    - cron: '0 0 * * *' 
-  workflow_dispatch: 
+# --- 基础配置 ---
+Entrez.email = "your_email@example.com"
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+def main():
+    print("🚀 程序启动...")
+    if not GEMINI_API_KEY:
+        print("❌ 未找到 API KEY")
+        return
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4 # 更新到了 v4
+    # 初始化 AI
+    genai.configure(api_key=GEMINI_API_KEY)
+    # 使用 1.5-flash，这是目前最稳定且免费的模型名
+    model = genai.GenerativeModel('gemini-1.5-flash')
 
-      - name: Set up Python
-        uses: actions/setup-python@v5 # 更新到了 v5
-        with:
-          python-version: '3.9'
+    # 检索 PubMed
+    print("📡 正在检索 PubMed...")
+    query = '("Pulmonary Fibrosis"[Title/Abstract] OR "Bronchoscopy"[Title/Abstract]) AND ("last 30 days"[DP])'
+    handle = Entrez.esearch(db="pubmed", term=query, retmax=10, sort="relevance")
+    record = Entrez.read(handle)
+    handle.close()
+    
+    id_list = record.get("IdList", [])
+    paper_list = []
 
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+    if id_list:
+        fetch_handle = Entrez.efetch(db="pubmed", id=id_list, rettype="medline", retmode="text")
+        records = list(Medline.parse(fetch_handle))
+        fetch_handle.close()
 
-      - name: Run Python script
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python get-reference.py
+        for r in records:
+            title = r.get("TI", "No Title")
+            abstract = r.get("AB", "")
+            print(f"📝 处理中: {title[:40]}...")
+            
+            # AI 总结逻辑
+            summary = "AI 正在生成总结..."
+            if abstract:
+                try:
+                    prompt = f"你是一个医学专家。请用中文一句话概括这篇文献的核心结论：\n标题: {title}\n摘要: {abstract}"
+                    response = model.generate_content(prompt)
+                    summary = response.text.strip()
+                except Exception as e:
+                    summary = "总结暂时不可用，请点击查看原文。"
+            
+            paper_list.append({
+                "title": title,
+                "journal": r.get("TA", "Unknown"),
+                "date": r.get("DP", "No Date"),
+                "authors": ", ".join(r.get("AU", [])),
+                "link": f"https://pubmed.ncbi.nlm.nih.gov/{r.get('PMID')}/",
+                "summary": summary
+            })
+            time.sleep(1) # 限速
 
-- name: Commit and Push changes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data.json
-          # 如果文件没变动，不要报错
-          git commit -m "Auto-update: $(date)" || exit 0
-          git push origin main
+    # 保存
+    os.makedirs('docs', exist_ok=True)
+    with open('docs/data.json', 'w', encoding='utf-8') as f:
+        json.dump(paper_list, f, ensure_ascii=False, indent=4)
+    print("✅ 完成！")
+
+if __name__ == "__main__":
+    main()
