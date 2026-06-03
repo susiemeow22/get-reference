@@ -6,7 +6,7 @@
             "date": "2026 May 13",
             "authors": "Merkt W, Rodon L, Deicher FS, Freitag M, Claus M, Lister R, Han H, Zhou Y, Horne A, Stutz A, Li YN, Kreuter M, Kahn N, Schneider MA, Egea-Zorrilla A, Blasco-Iturri Z, Nikulina N, Turkowski K, Ruppert C, Guenther A, Rizzo R, Rizzo S, Ferraresi M, Hubschmann D, Haas S, Blank N, Watzl C, Tykocinski LO, Lorenz HM, Savai R, Pardo-Saganta A, Lagares D",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42127218/",
-            "summary": "NK细胞免疫治疗通过清除衰老成纤维细胞逆转肺纤维化。"
+            "summary": "自然杀伤细胞免疫疗法通过消除衰老成纤维细胞逆转肺纤维化。"
         },
         {
             "title": "The immunodynamics of pulmonary fibrosis.",
@@ -14,31 +14,7 @@
             "date": "2026 Jun",
             "authors": "Xie C, Ma Y, Wang Y, Gul A, Tang W, Luo Q, Xu W, Wei Y, Dong J, Liu W",
             "link": "https://pubmed.ncbi.nlm.nih.gov/41999680/",
-            "summary": "近年研究推翻“肺纤维化无免疫参与”旧论，揭示动态免疫微环境是驱动病理重塑的核心。"
-        },
-        {
-            "title": "The transcriptome of CD14(+)CD163(-)HLA-DR(low) monocytes predicts mortality in idiopathic pulmonary fibrosis.",
-            "journal": "Eur Respir J",
-            "date": "2026 May",
-            "authors": "Karampitsakos T, Jia M, Tourki B, Fatima Z, Visinescu B, Perrot CY, Fadli T, Zhao A, Unterman A, Schneider MA, Bandyopadhyay D, Juan-Guardela BM, Vamvakaris I, Prasse A, Noth I, Liggett S, Kreuter M, Drake W, Tzouvelekis A, Garcia JGN, Herzog E, Kaminski N, Benos PV, Herazo-Maya JD",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/41360505/",
-            "summary": "CD14+CD163-HLA-DRlow单核细胞的转录组特征可预测特发性肺纤维化患者的死亡率。"
-        },
-        {
-            "title": "Cx3cr1 depletion ameliorates lipid metabolic dysregulation and pulmonary fibrosis induced by silica.",
-            "journal": "Chem Biol Interact",
-            "date": "2026 May 25",
-            "authors": "Hu E, Wang Y, Li Z, Zhang J, Huang W, Shen J, Liu D, Zhu Z, Tian L, Wang Y",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/41763510/",
-            "summary": "CX3CR1缺失通过抑制脂代谢紊乱改善矽肺纤维化。"
-        },
-        {
-            "title": "Predicting Postoperative Complications in Patients With Lung Cancer and Idiopathic Pulmonary Fibrosis.",
-            "journal": "Respirology",
-            "date": "2026 Jun",
-            "authors": "Im Y, Chung MP, Kim H, Park JS, Song MJ, Song JW, Lee B, Choi YS, Kim HK, Cho JH, Park SY, Lee J, Jeon YJ, Kim K, Kim MJ, Yoo H",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/41702848/",
-            "summary": "该评分系统通过年龄等六项指标，可有效预测特发性肺纤维化合并肺癌患者术后并发症风险。"
+            "summary": "肺纤维化免疫动力学揭示免疫细胞动态相互作用是驱动病理性肺重塑的核心。"
         },
         {
             "title": "Pulmonary delivery of gene-loaded lipid nanoparticles for targeting TGF-beta signaling in idiopathic pulmonary fibrosis.",
@@ -46,7 +22,39 @@
             "date": "2026 Jun",
             "authors": "Chhabada Y, Yadav KS",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42112626/",
-            "summary": "吸入式基因脂质纳米颗粒通过靶向TGF-β信号通路，为特发性肺纤维化提供了一种有前景的疾病修正疗法。"
+            "summary": "吸入性基因脂质纳米颗粒递送TGF-β信号调控，为特发性肺纤维化提供有前景的疾病修饰治疗策略。"
+        },
+        {
+            "title": "Cx3cr1 depletion ameliorates lipid metabolic dysregulation and pulmonary fibrosis induced by silica.",
+            "journal": "Chem Biol Interact",
+            "date": "2026 May 25",
+            "authors": "Hu E, Wang Y, Li Z, Zhang J, Huang W, Shen J, Liu D, Zhu Z, Tian L, Wang Y",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/41763510/",
+            "summary": "敲除Cx3cr1基因可改善矽肺小鼠的脂代谢紊乱并减轻肺纤维化。"
+        },
+        {
+            "title": "Predicting Postoperative Complications in Patients With Lung Cancer and Idiopathic Pulmonary Fibrosis.",
+            "journal": "Respirology",
+            "date": "2026 Jun",
+            "authors": "Im Y, Chung MP, Kim H, Park JS, Song MJ, Song JW, Lee B, Choi YS, Kim HK, Cho JH, Park SY, Lee J, Jeon YJ, Kim K, Kim MJ, Yoo H",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/41702848/",
+            "summary": "该研究开发了一个基于六项指标的评分系统，可有效预测IPF合并肺癌患者术后肺部并发症风险。"
+        },
+        {
+            "title": "The transcriptome of CD14(+)CD163(-)HLA-DR(low) monocytes predicts mortality in idiopathic pulmonary fibrosis.",
+            "journal": "Eur Respir J",
+            "date": "2026 May",
+            "authors": "Karampitsakos T, Jia M, Tourki B, Fatima Z, Visinescu B, Perrot CY, Fadli T, Zhao A, Unterman A, Schneider MA, Bandyopadhyay D, Juan-Guardela BM, Vamvakaris I, Prasse A, Noth I, Liggett S, Kreuter M, Drake W, Tzouvelekis A, Garcia JGN, Herzog E, Kaminski N, Benos PV, Herazo-Maya JD",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/41360505/",
+            "summary": "特定单核细胞转录组特征可预测特发性肺纤维化患者死亡风险。"
+        },
+        {
+            "title": "Dual knockdown of Alox15 and TGF-beta1 by lipid nanoparticle-delivered siRNA in bleomycin-induced pulmonary fibrosis.",
+            "journal": "Biochem Biophys Rep",
+            "date": "2026 Jun",
+            "authors": "Chang CW, Lin JH, Liu CC, Hsu TW, Hsu HS, Hung SC",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/41847300/",
+            "summary": "脂质纳米颗粒递送的siRNA双重敲低Alox15和TGF-beta1显著改善博来霉素诱导的肺纤维化。"
         },
         {
             "title": "Prophylactic quercetin administration attenuates pulmonary fibrosis via ferroptosis-resistant priming of alveolar epithelial cells.",
@@ -54,15 +62,7 @@
             "date": "2026 Dec",
             "authors": "Qiao Y, Cheng X, Luo Z, Huang W, Zhang Z, Ren K, Xu X, He H, He M, Yin L",
             "link": "https://pubmed.ncbi.nlm.nih.gov/41697789/",
-            "summary": "预防性槲皮素通过诱导肺泡上皮细胞抗氧化应激适应，增强NRF2通路，抑制铁死亡，有效预防肺纤维化。"
-        },
-        {
-            "title": "Clinical and Radiologic Characteristics of Familial Pulmonary Fibrosis.",
-            "journal": "Ann Am Thorac Soc",
-            "date": "2026 Jun 1",
-            "authors": "Grant-Orser A, Marinescu DC, Hague CJ, Muller NL, Murphy DT, Churg A, Wright JL, Al-Arnawoot A, Bilawich AM, Bourgouin P, Cox G, Durand C, Elliot T, Ellis J, Fisher JH, Fladeland D, Goobie GC, Guenther Z, Haider E, Hambly N, Huynh J, Karjala G, Khalil N, Kolb M, Leipsic J, Lok S, Macisaac S, Mcinnis M, Manganas H, Marcoux V, Mayo J, Morisset J, Scallan C, Sedlic T, Shapera S, Sun K, Tan V, Wong AW, Zheng B, Assayag D, Newton CA, Lethebe BC, Ryerson CJ, Johannson KA",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42225597/",
-            "summary": "家族性肺纤维化患者较散发性患者发病更早、病情更重，生存率降低。"
+            "summary": "槲皮素预防性给药通过增强肺泡上皮细胞抗铁死亡能力有效减轻肺纤维化。"
         },
         {
             "title": "Reading the monocyte code in idiopathic pulmonary fibrosis.",
@@ -78,7 +78,15 @@
             "date": "2026 May 15",
             "authors": "Park JH",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42136401/",
-            "summary": "PPF预后差，抗纤维化治疗可减缓肺功能下降，但长期生存影响未明。"
+            "summary": "进行性肺纤维化预后不良，抗纤维化治疗可减缓肺功能下降，但长期生存影响待研究。"
+        },
+        {
+            "title": "Fight Against Pulmonary Fibrosis: Integrating Mechanistic Insights and Innovative Therapies.",
+            "journal": "Curr Pharm Biotechnol",
+            "date": "2026 May 19",
+            "authors": "Mao W, Yang Y, Shi W, Zhao W, Huang N",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42227407/",
+            "summary": "肺纤维化新疗法（如干细胞、基因治疗等）因机制研究突破而涌现，但当前仍需更多研究改善患者预后。"
         },
         {
             "title": "Regulated Cell Death in Idiopathic Pulmonary Fibrosis.",
@@ -86,7 +94,15 @@
             "date": "2026 May 15",
             "authors": "Pan X, Yang L, Zhao M, Zhou Y, Xia C, Liu H, Wang Y, Lian H, Li B, Wang L, Yu G",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42068211/",
-            "summary": "特发性肺纤维化中多种程序性细胞死亡方式（凋亡、自噬、铁死亡等）协同驱动上皮损伤和纤维化重塑。"
+            "summary": "多种细胞死亡模式共同驱动特发性肺纤维化的病理进程。"
+        },
+        {
+            "title": "Clinical and Radiologic Characteristics of Familial Pulmonary Fibrosis.",
+            "journal": "Ann Am Thorac Soc",
+            "date": "2026 Jun 1",
+            "authors": "Grant-Orser A, Marinescu DC, Hague CJ, Muller NL, Murphy DT, Churg A, Wright JL, Al-Arnawoot A, Bilawich AM, Bourgouin P, Cox G, Durand C, Elliot T, Ellis J, Fisher JH, Fladeland D, Goobie GC, Guenther Z, Haider E, Hambly N, Huynh J, Karjala G, Khalil N, Kolb M, Leipsic J, Lok S, Macisaac S, Mcinnis M, Manganas H, Marcoux V, Mayo J, Morisset J, Scallan C, Sedlic T, Shapera S, Sun K, Tan V, Wong AW, Zheng B, Assayag D, Newton CA, Lethebe BC, Ryerson CJ, Johannson KA",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42225597/",
+            "summary": "家族性肺纤维化患者发病更早、病情更重，肺功能较差，生存期短于散发性病例。"
         },
         {
             "title": "Macrophage-to-Myofibroblast Transdifferentiation Contributes to Pulmonary Fibrosis via the MERTK-SPP1-SRC-TKS5 Signaling Axis.",
@@ -94,7 +110,15 @@
             "date": "2026 May 14",
             "authors": "Wei Y, Guo H, Yang X, Tang XX",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42133197/",
-            "summary": "巨噬细胞经MERTK-SPP1-SRC-TKS5轴转化为肌成纤维细胞，促进肺纤维化，靶向该轴可有效抑制纤维化。"
+            "summary": "MERTK-SPP1-SRC-TKS5信号轴驱动巨噬细胞-肌成纤维细胞转分化，促进肺纤维化，靶向此轴可减轻纤维化进程。"
+        },
+        {
+            "title": "Elevated ST2(+) Tregs in RA-ILD: correlation with pulmonary fibrosis and the IL-33/ST2/AREG axis.",
+            "journal": "Arthritis Res Ther",
+            "date": "2026 May 28",
+            "authors": "Zhang P, Wang J, Sun H, Miao J, Zheng Z",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42210372/",
+            "summary": "RA-ILD患者中ST2阳性调节性T细胞增多，通过IL-33/ST2/AREG通路促进肺纤维化。"
         },
         {
             "title": "Single-cell landscape of piglet lung response with Actinobacillus pleuropneumoniae.",
@@ -102,15 +126,15 @@
             "date": "2026 Dec",
             "authors": "Zhu J, Zhu S, Xia C, Jiang X, Bao C, Li Z, Zhu R, Jiang H, Li F, Zhang X, Wang W, Chen H, Mei J, Gu J, Li N, Lei L",
             "link": "https://pubmed.ncbi.nlm.nih.gov/41843736/",
-            "summary": "单细胞测序揭示猪胸膜肺炎放线杆菌感染诱导肺纤维化涉及单核细胞、中性粒细胞和pDC富集及成纤维细胞异常增殖。"
+            "summary": "猪感染胸膜肺炎放线杆菌后，单核细胞、中性粒细胞等免疫细胞富集，并抑制巨噬细胞分化导致肺纤维化。"
         },
         {
-            "title": "FFA4 inhibits bleomycin-induced pulmonary fibrosis in mice by suppressing IL-33.",
-            "journal": "Biochem Biophys Res Commun",
-            "date": "2026 Jul 9",
-            "authors": "Feng J, Dong H, Yin S",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42097047/",
-            "summary": "FFA4通过抑制IL-33减轻博来霉素诱导的小鼠肺纤维化。"
+            "title": "Mitophagy in Pulmonary Fibrosis: Molecular Interactions, Hypoxia Interactions, and Therapeutic Strategies.",
+            "journal": "Curr Med Chem",
+            "date": "2026 May 20",
+            "authors": "Zhang X, Wang L, Yan H, Chen Y, He C",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42227532/",
+            "summary": "线粒体自噬缺陷通过mtROS、铁死亡和细胞衰老驱动肺纤维化，激活线粒体自噬是潜在抗纤维化策略。"
         },
         {
             "title": "Shengxian decoction mitigate bleomycin-induced pulmonary fibrosis in mice via MerTK mediated macrophage efferocytosis.",
@@ -118,7 +142,15 @@
             "date": "2026 Jun 28",
             "authors": "Zhao P, Liu Y, Liu S, Li L, Song H, Zhao G, Sun Y, Di G, Lu X, Hu H",
             "link": "https://pubmed.ncbi.nlm.nih.gov/41887381/",
-            "summary": "升陷汤通过MerTK介导的巨噬细胞胞葬作用减轻博来霉素诱导的小鼠肺纤维化。"
+            "summary": "SXD通过MerTK介导的巨噬细胞胞葬作用减轻博来霉素诱导的小鼠肺纤维化。"
+        },
+        {
+            "title": "Disulfiram Attenuates Bleomycin-Induced Lung Inflammation and Fibrosis with Reduced Endothelial Pyroptosis and Neutrophil Adhesion.",
+            "journal": "J Inflamm Res",
+            "date": "2026",
+            "authors": "Sun CY, Yang WL, Shen HC, Yu WK, Chen WC, Yang KY",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42232154/",
+            "summary": "双硫仑通过抑制内皮细胞焦亡和中性粒细胞黏附减轻博来霉素诱导的肺纤维化。"
         },
         {
             "title": "Doublecortin-like kinase 1 promotes fibroblast activation and fibrotic progression through Smad3 binding in idiopathic pulmonary fibrosis.",
@@ -126,39 +158,7 @@
             "date": "2026 May 22",
             "authors": "Lin LY, Cheng WH, Wu YC, Wen HC, Hsu HH, Liu CH, Chen JY, Chang WS, Wu YJ, Wu JS, Yuliani FS, Wang CY, Lin CH, Chen BC",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42174588/",
-            "summary": "DCLK1通过与Smad3结合促进成纤维细胞活化，驱动特发性肺纤维化进展。"
-        },
-        {
-            "title": "Mitochondrial IRF3 drives pulmonary fibrosis by impairing mitophagy and triggering ferroptosis.",
-            "journal": "Cell Signal",
-            "date": "2026 Aug",
-            "authors": "Jiashu Z, Jingbao L, Hua F, Meiqi S, Jing L, Mengyao W, Wei Z",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/41932414/",
-            "summary": "线粒体IRF3通过抑制线粒体自噬并诱发铁死亡，从而驱动肺纤维化进展。"
-        },
-        {
-            "title": "Atractylenolide I alleviates bleomycin-induced idiopathic pulmonary fibrosis via regulating HIF-1alpha to suppress oxidative stress and endoplasmic reticulum stress.",
-            "journal": "J Ethnopharmacol",
-            "date": "2026 Jun 12",
-            "authors": "Zhao Y, Leng M, Wei B, Xia H, Ling M, Bai X, Luo H",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/41791618/",
-            "summary": "白术内酯I通过调控HIF-1α抑制氧化应激和内质网应激缓解肺纤维化。"
-        },
-        {
-            "title": "Lactate transport inhibition therapeutically reprograms fibroblast metabolism in experimental pulmonary fibrosis.",
-            "journal": "Sci Transl Med",
-            "date": "2026 May 6",
-            "authors": "Ziehr DR, Li F, Parnell KM, Krah NM, Leahy KJ, Guillermier C, Gao C, Prell SA, Vigder N, Poli S, Varon J, Baron RM, Maron BA, Philp NJ, Hariri LP, Kim EY, Wei KS, Steinhauser ML, Knipe RS, Rutter J, Oldham WM",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42090478/",
-            "summary": "抑制乳酸转运可重编程成纤维细胞代谢，减轻实验性肺纤维化。"
-        },
-        {
-            "title": "Phase 3 Trials of Inhaled Treprostinil for Idiopathic Pulmonary Fibrosis.",
-            "journal": "N Engl J Med",
-            "date": "2026 May 18",
-            "authors": "Nathan SD, Smith P, Deng C, King CS, De Salvo M, Weigt SS, Pandya S, Bandyopadhyay D, Lasky JA, Krishna R, Hambly N, Ramaswamy M, Kebbe J, Ettinger N, Gao J, Rao Y, Breytenbach N, Peterson L, Bell H, Behr J, Cottin V, Flaherty KR",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42149993/",
-            "summary": "吸入性曲前列环素未能改善特发性肺纤维化患者52周肺功能。"
+            "summary": "DCLK1通过结合Smad3促进成纤维细胞激活，是特发性肺纤维化的潜在治疗靶点。"
         }
     ],
     "支气管镜": [
@@ -168,7 +168,7 @@
             "date": "2026 May 14",
             "authors": "Brown MC, Powers A, Trope M, Jacobs I",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42135119/",
-            "summary": "儿童气道异物常见且危险，硬质支气管镜是诊断治疗金标准，高度怀疑应尽早手术。"
+            "summary": "儿童气道异物常见且危险，硬质支气管镜是诊断和治疗的黄金标准。"
         },
         {
             "title": "Bronchoscopic abnormalities in children with chronic nonspecific cough.",
@@ -176,7 +176,23 @@
             "date": "2026 May 18",
             "authors": "Elmeazawy R, M Elniny A, Razik AMA, A Abo-Elezz A, Youssef A, Hussein MM",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42151924/",
-            "summary": "儿童慢性非特异性咳嗽中，87.5%病例支气管镜检查异常，最常见为化脓性分泌物和先天性气道畸形。"
+            "summary": "慢性非特异性咳嗽患儿支气管镜检查异常率达87.5%，常见于脓性分泌物和先天性气道畸形。"
+        },
+        {
+            "title": "Plasma and intrapulmonary pharmacokinetics of ceftibuten and ledaborbactam in healthy male and female adults.",
+            "journal": "Antimicrob Agents Chemother",
+            "date": "2026 Jun 3",
+            "authors": "Rodvold KA, Gotfried MH, de Oliveira CF, Lowe K, Hamed KA, Litherland K, Engelhardt M, McGovern PC",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42008649/",
+            "summary": "头孢布烯/莱达硼巴坦口服复方在健康成人肺上皮衬液浓度达到治疗耐药革兰阴性菌水平。"
+        },
+        {
+            "title": "Platelet-leucocyte interactions drive MMP-mediated tissue damage in tuberculosis.",
+            "journal": "PLoS Pathog",
+            "date": "2026 May",
+            "authors": "Kirwan DE, Chong DLW, Gayoso O, Coronel J, Loader MC, Ugarte-Gil CA, Cabrera L, Medrano RC, Taylor KA, Emerson M, Lozada-Requena I, Kutschenreuter J, Zimic M, Gilman RH, Friedland JS",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42113884/",
+            "summary": "结核病中血小板与白细胞通过P-选择素/PSGL-1相互作用，驱动MMP介导的组织损伤。"
         },
         {
             "title": "Worldwide Survey on Interventional Pulmonology Training Programs.",
@@ -184,7 +200,7 @@
             "date": "2026 May 7",
             "authors": "Chrif Morand L, Corbetta L",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42096371/",
-            "summary": "该全球调查显示，介入肺脏病学培训存在显著不足，70%的受访者报告培训不充分。"
+            "summary": "全球介入肺脏病学培训存在显著缺失，70%受访者报告培训不足，且缺乏标准化认证体系。"
         },
         {
             "title": "Endobronchial ultrasound-guided mediastinal biopsies for the diagnosis of mediastinal diseases: A network meta-analysis.",
@@ -192,15 +208,7 @@
             "date": "2026 Dec",
             "authors": "Qi YJ, Zhang J, Salcedo Lobera E, Song QY, Zhong RH, Kontogianni K, Huang ZS, Ariza-Prota M, Gupta N, Madan M, Maturu VN, Pratibh Prasad V, Steinack C, Wu N, Gaisl T, Herth FJ, Fan Y",
             "link": "https://pubmed.ncbi.nlm.nih.gov/41560513/",
-            "summary": "EBUS-TBNA联合冷冻活检是诊断纵隔疾病最优方案，诊断效能显著优于单独使用。"
-        },
-        {
-            "title": "Effects of positive pressure on tracheobronchomalacia and collapse reversal.",
-            "journal": "BMC Pulm Med",
-            "date": "2026 May 30",
-            "authors": "Lima E, Nakamura MAM, Rodrigues AJ, Costa ELV, Rached SZ, Sawamura MVY, Genta PR, Athanazio RA",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42216039/",
-            "summary": "持续气道正压可逆转Mounier-Kuhn综合征患者的气道塌陷，最佳压力需通过支气管镜和EIT滴定确定。"
+            "summary": "EBUS-TBNA联合冷冻活检诊断纵隔疾病效能最优，显著优于其他活检策略。"
         },
         {
             "title": "Anesthesia for Posterior Tracheopexy in Pediatric Patients.",
@@ -208,15 +216,7 @@
             "date": "2026 Jun 1",
             "authors": "Munoz CJ, Kuo FH, Hernandez MR, Alrayashi W, Sullivan CA, Wang JT, Jennings RW",
             "link": "https://pubmed.ncbi.nlm.nih.gov/39365742/",
-            "summary": "美国儿科后路气管固定术麻醉技术的改进优化了严重气管支气管软化症患儿的手术效果。"
-        },
-        {
-            "title": "Comparative study of transbronchial cryobiopsy and transbronchial biopsy for diagnostic yield in peripheral pulmonary lesions.",
-            "journal": "Ann Med",
-            "date": "2026 Dec",
-            "authors": "Chang HC, Lin CK, Chen LC, Chang LK, Yang SM, Keng LT, Yu CJ",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/41504695/",
-            "summary": "经支气管冷冻活检比传统钳活检对周围性肺病变的诊断率更高（94% vs 77%），且获取标本更大。"
+            "summary": "后路气管固定术需麻醉团队与外科紧密协作，可提高小儿气管支气管软化症手术安全性及预后。"
         },
         {
             "title": "AIBAN-AI Bronchial Detection and Airway Navigation System.",
@@ -224,7 +224,7 @@
             "date": "2026 Jul 1",
             "authors": "Oliveira B, Cheng Z, Guldbron LH, Konge L, Savarimuthu TR, Cold KM",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42080585/",
-            "summary": "AIBAN系统基于YOLOv8实时检测34个气道标志物，实现91.1%帧定位精度及92.6%分支内导航准确率。"
+            "summary": "AIBAN系统通过YOLOv8和层级解剖图实现91.1%的镜下定位准确率，有效提升支气管镜导航安全性。"
         },
         {
             "title": "Safety of flexible bronchoscopy in elderly patients.",
@@ -232,7 +232,7 @@
             "date": "2026 May 6",
             "authors": "Spiegel S, Hubner RH, Schurmann D, Neumann K, Pappe E, Sgarbossa T, Witzenrath M, Saccomanno J",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42092890/",
-            "summary": "高龄患者（≥70岁）行可弯曲支气管镜安全性高，与年轻患者并发症率无显著差异。"
+            "summary": "老年患者（≥70岁）行可弯曲支气管镜检查的并发症率（1.7%）与年轻患者无显著差异，总体安全。"
         },
         {
             "title": "Ambient Sound Pressure Levels in the Bronchoscopy Suite: Contrasting Flexible, Rigid, and Robotic-Assisted Bronchoscopy.",
@@ -240,79 +240,7 @@
             "date": "2026 Jul 1",
             "authors": "Rakocevic R, Dwyer C, Ho KS, Reed RM, Lazo KG, Ashok S, Thi Nhat Ho A, Husta BC, Lee RP, Chawla M, Hines SE, Zhen Y, Larbi J, Feuerstein E, Kaza S, Kalchiem-Dekel O",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42178925/",
-            "summary": "在支气管镜操作中，硬质支气管镜噪声水平最高，机器人辅助支气管镜噪声水平最低。"
-        },
-        {
-            "title": "The Approach to Chronic Cough in Dogs and Cats.",
-            "journal": "Vet Clin North Am Small Anim Pract",
-            "date": "2026 May 4",
-            "authors": "Munro MJL",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42086413/",
-            "summary": "犬猫慢性咳嗽需结合病史、体查与影像学等综合诊断，药物及非药物疗法可控制症状、改善生活质量。"
-        },
-        {
-            "title": "PERCUTANEOUS DILATATIONAL TRACHEOSTOMY AND THYROID ISTHMUS PENETRATION (PETRIS).",
-            "journal": "Anaesth Crit Care Pain Med",
-            "date": "2026 May 29",
-            "authors": "Rara A, Sotak M, Hynek M, Kovacic K, Filipovsky T, Tyll T",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42217576/",
-            "summary": "经皮气管切开术中穿过甲状腺峡部并不增加早期并发症，超声引导虽安全但未显著降低风险。"
-        },
-        {
-            "title": "Clinical analysis of tracheobronchial foreign body aspiration in children aged six years and older.",
-            "journal": "BMC Pediatr",
-            "date": "2026 May 30",
-            "authors": "Zhang X, Zhu L",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42218432/",
-            "summary": "学龄儿童气道异物以笔帽和西瓜籽最常见，表现为咳嗽和喘息，发病率男性显著高于女性。"
-        },
-        {
-            "title": "High flow nasal cannula versus conventional oxygen therapy during bronchoscopy: A systematic review and individual participant data meta-analysis.",
-            "journal": "Pulmonology",
-            "date": "2026 Dec",
-            "authors": "Wang J, Tan W, Luo J, Qin H, Wang R, Zhang W, Longhini F, Irfan M, Zhou H, Song X, Zhang W, Li J",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/41532216/",
-            "summary": "高流量鼻导管显著降低支气管镜检查期间的低氧血症、操作中断及气道干预风险，优于常规氧疗。"
-        },
-        {
-            "title": "Robotic-assisted bronchoscopy for lung nodules and masses - can it replace CT-guided transthoracic biopsy?",
-            "journal": "Curr Opin Pulm Med",
-            "date": "2026 Jul 1",
-            "authors": "Ko J, Bedi H, Chang J",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/41925197/",
-            "summary": "机器人辅助支气管镜对肺结节诊断率不劣于CT引导穿刺，且安全性更优。"
-        },
-        {
-            "title": "[Clinical analysis of comprehensive bronchoscopic interventional therapy for invasive pulmonary aspergillosis].",
-            "journal": "Zhonghua Jie He He Hu Xi Za Zhi",
-            "date": "2026 May 12",
-            "authors": "Li J, Cai CL, Zhao LN, Wang YH, Mu XD",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42108177/",
-            "summary": "支气管镜介入治疗侵袭性肺曲霉病安全有效，患者气道阻塞和感染明显改善。"
-        },
-        {
-            "title": "Multimodal interventional bronchoscopy for chronic pulmonary Aspergillus infection with post-tubercular bronchial occlusion: a case report.",
-            "journal": "Front Med (Lausanne)",
-            "date": "2026",
-            "authors": "Wu W, Yin H, Chen X, He Y, Xue B, Zhang J, Wang T",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42221110/",
-            "summary": "多模式介入支气管镜术联合局部抗真菌灌注可有效治疗结核后支气管闭塞型慢性肺曲霉病。"
-        },
-        {
-            "title": "Comparing the effectiveness and safety of robotic-assisted bronchoscopy and computed tomography-guided transthoracic biopsy for evaluating pulmonary lung nodules: results from the DYSTRICT study.",
-            "journal": "ERJ Open Res",
-            "date": "2026 May",
-            "authors": "Fernandez-Bussy S, Vaca-Cartagena BF, Barrios-Ruiz A, Valdes-Camacho S, Yu Lee-Mateus A, Gutierrez-Gallegos P, Funes-Ferrada R, Malla M, Ibrahim MI, Vu LH, Husta BC, Abia-Trujillo D",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42094232/",
-            "summary": "机器人辅助支气管镜与CT引导经胸活检对肺结节的诊断效果和安全性相似。"
-        },
-        {
-            "title": "Use of whole genome sequencing in a bronchoscopy-related pseudo-outbreak of Mycobacterium mucogenicum linked to ice machines.",
-            "journal": "Am J Infect Control",
-            "date": "2026 Jun",
-            "authors": "Johnson C, Wood MG, Graham MB, Gorecki P, Shockey A, Mooney A, Bateman A, Simon N, Figueroa Castro CE",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/41544769/",
-            "summary": "全基因组测序揭示支气管镜操作中冰机制冰污染导致粘液分枝杆菌假暴发。"
+            "summary": "三种支气管镜检查均超过推荐噪音阈值，硬质支气管镜噪音最大，机器人辅助支气管镜噪音最小。"
         },
         {
             "title": "Consensus-based standardization of procedural steps for indwelling pleural catheter placement: a modified Delphi study.",
@@ -320,7 +248,79 @@
             "date": "2026 Jun",
             "authors": "Lara JC, Pu CY, Kheir F, Uribe JP, Alshabani K, Swenson KE, Beattie J, Parikh M, Keyes C, Folch EE, Majid A",
             "link": "https://pubmed.ncbi.nlm.nih.gov/41439811/",
-            "summary": "通过改良德尔菲法，专家共识规范了留置胸膜导管置入的标准化操作步骤。"
+            "summary": "本研究通过改良德尔菲法首次建立了留置胸膜导管放置的标准化操作共识。"
+        },
+        {
+            "title": "Pembrolizumab-induced pan-airway mucositis with a cobblestone-like appearance: a case report.",
+            "journal": "Jpn J Clin Oncol",
+            "date": "2026 May 7",
+            "authors": "Ikeda R, Takahashi T, Ichikawa K, Kazama H, Horii A",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/41609200/",
+            "summary": "帕博利珠单抗可导致全气道黏膜炎，表现为鹅卵石样改变，停用并激素治疗后恢复。"
+        },
+        {
+            "title": "The Approach to Chronic Cough in Dogs and Cats.",
+            "journal": "Vet Clin North Am Small Anim Pract",
+            "date": "2026 May 4",
+            "authors": "Munro MJL",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42086413/",
+            "summary": "该文献提供了犬猫慢性咳嗽的综合诊疗策略，强调病史、体格检查及多种诊断工具的应用，并指出即使无法确诊也可通过药物与非药物疗法控制症状。"
+        },
+        {
+            "title": "Pharmacological approach to awake tracheal intubation.",
+            "journal": "Curr Opin Anaesthesiol",
+            "date": "2026 Jun 2",
+            "authors": "Paterno DS, La Via L, Lo Giudice EC, Sorbello M",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42228499/",
+            "summary": "清醒气管插管依赖于充分气道表麻、谨慎镇静保持自主呼吸及操作者经验，无单一方案显示绝对优势。"
+        },
+        {
+            "title": "Improved screening for pulmonary Kaposi sarcoma in a low-resource setting.",
+            "journal": "AIDS",
+            "date": "2026 Jun 1",
+            "authors": "Borok MZ, Fiorillo S, Manyeruke F, Makoni T, Gudza I, Mutimuri M, Phiri M, Nyagura T, White IE, Rapaport R, Bock A, Nalwoga A, Campbell TW, Campbell TB",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/41587418/",
+            "summary": "低资源环境下，借助机器学习模型分析临床指标组合可显著提高肺卡波西肉瘤筛查准确性。"
+        },
+        {
+            "title": "High flow nasal cannula versus conventional oxygen therapy during bronchoscopy: A systematic review and individual participant data meta-analysis.",
+            "journal": "Pulmonology",
+            "date": "2026 Dec",
+            "authors": "Wang J, Tan W, Luo J, Qin H, Wang R, Zhang W, Longhini F, Irfan M, Zhou H, Song X, Zhang W, Li J",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/41532216/",
+            "summary": "高流量鼻导管优于常规氧疗，能显著减少支气管镜术中低氧血症和操作中断。"
+        },
+        {
+            "title": "Effects of positive pressure on tracheobronchomalacia and collapse reversal.",
+            "journal": "BMC Pulm Med",
+            "date": "2026 May 30",
+            "authors": "Lima E, Nakamura MAM, Rodrigues AJ, Costa ELV, Rached SZ, Sawamura MVY, Genta PR, Athanazio RA",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42216039/",
+            "summary": "正压通气（CPAP/ PEEP）可有效逆转Mounier-Kuhn综合征患者的支气管软化塌陷。"
+        },
+        {
+            "title": "Robotic-assisted bronchoscopy for lung nodules and masses - can it replace CT-guided transthoracic biopsy?",
+            "journal": "Curr Opin Pulm Med",
+            "date": "2026 Jul 1",
+            "authors": "Ko J, Bedi H, Chang J",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/41925197/",
+            "summary": "机器人辅助支气管镜在诊断肺结节方面诊断率不劣于CT引导活检且安全性更优。"
+        },
+        {
+            "title": "Multimodal interventional bronchoscopy for chronic pulmonary Aspergillus infection with post-tubercular bronchial occlusion: a case report.",
+            "journal": "Front Med (Lausanne)",
+            "date": "2026",
+            "authors": "Wu W, Yin H, Chen X, He Y, Xue B, Zhang J, Wang T",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42221110/",
+            "summary": "多模式介入支气管镜治疗结合局部抗真菌灌注可有效改善结核后支气管闭塞的慢性肺曲霉病。"
+        },
+        {
+            "title": "Comparing the effectiveness and safety of robotic-assisted bronchoscopy and computed tomography-guided transthoracic biopsy for evaluating pulmonary lung nodules: results from the DYSTRICT study.",
+            "journal": "ERJ Open Res",
+            "date": "2026 May",
+            "authors": "Fernandez-Bussy S, Vaca-Cartagena BF, Barrios-Ruiz A, Valdes-Camacho S, Yu Lee-Mateus A, Gutierrez-Gallegos P, Funes-Ferrada R, Malla M, Ibrahim MI, Vu LH, Husta BC, Abia-Trujillo D",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42094232/",
+            "summary": "该研究表明机器人辅助支气管镜和CT引导经胸穿刺活检在肺结节诊断效能和安全性上相似。"
         }
     ],
     "结节病": [
@@ -346,7 +346,7 @@
             "date": "2026 Jun",
             "authors": "Seiler T, Noti F, Laimer M, Reichlin T, Haeberlin A",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42100587/",
-            "summary": "司美格鲁肽快速减重可能增加心脏植入式电子设备发生Twiddler综合征及致命并发症的风险。"
+            "summary": "Semaglutide快速减重可能导致ICD患者出现Twiddler综合征，这是一种罕见但危及生命的机械并发症。"
         },
         {
             "title": "Pulmonary Sarcoidosis: Imaging and Diagnostic Limitations.",
@@ -354,7 +354,7 @@
             "date": "2026 Jun",
             "authors": "Kostova J, Andreisek G, Muller MA",
             "link": "https://pubmed.ncbi.nlm.nih.gov/41224200/",
-            "summary": "胸片分期虽简便但准确性有限，CT能更精确区分可逆与不可逆肺部病变。"
+            "summary": "胸部CT是诊断肺结节病最精确的影像学方法，能区分可逆与不可逆病变。"
         },
         {
             "title": "Spectrum of kidney disease in pediatric sarcoidosis.",
@@ -362,23 +362,7 @@
             "date": "2026 Dec",
             "authors": "Bindal T, Govindarajan S, Barwad A, Naranje P, Damle NA, Hari P, Sinha A, Bagga A",
             "link": "https://pubmed.ncbi.nlm.nih.gov/40926164/",
-            "summary": "小儿结节病肾病罕见且易漏诊，常表现为急性肾损伤、蛋白尿及肉芽肿性间质性肾炎。"
-        },
-        {
-            "title": "[TNF-alpha Inhibitor-Induced Pulmonary Sarcoidosis].",
-            "journal": "Pneumologie",
-            "date": "2026 May 4",
-            "authors": "Berger M, Windisch W, Schumacher F, Ploenes N",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42082137/",
-            "summary": "TNF-α抑制剂（尤其依那西普）可反常诱发肺结节病，临床及病理表现类似特发性结节病。"
-        },
-        {
-            "title": "The theory of the inflammatory ecosystem.",
-            "journal": "Sci China Life Sci",
-            "date": "2026 May 11",
-            "authors": "Saw PE, Song E",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42144507/",
-            "summary": "慢性炎症是一个动态、多组分互作的生态系统，涉及免疫及非免疫细胞在局部至全身的协同病变。"
+            "summary": "儿童结节病肾受累常表现为急性肾损伤、蛋白尿和高钙血症。"
         },
         {
             "title": "Management and outcomes of cardiac sarcoidosis diagnosed after permanent pacemaker implantation for high-grade atrioventricular block.",
@@ -389,12 +373,28 @@
             "summary": "摘要缺失。"
         },
         {
+            "title": "[TNF-alpha Inhibitor-Induced Pulmonary Sarcoidosis].",
+            "journal": "Pneumologie",
+            "date": "2026 May 4",
+            "authors": "Berger M, Windisch W, Schumacher F, Ploenes N",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42082137/",
+            "summary": "TNF-α抑制剂罕见通过矛盾反应诱发肺结节病，以依那西普最常见。"
+        },
+        {
+            "title": "The theory of the inflammatory ecosystem.",
+            "journal": "Sci China Life Sci",
+            "date": "2026 May 11",
+            "authors": "Saw PE, Song E",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42144507/",
+            "summary": "慢性炎症被重新定义为由免疫与非免疫细胞互动构成的动态空间生态系统。"
+        },
+        {
             "title": "Sarcoidosis on 18 F-FDG PET/CT : Typical and Atypical Imaging Patterns.",
             "journal": "Clin Nucl Med",
             "date": "2026 Jun 1",
             "authors": "Mahdi RA, Gunasekaran V, Singhal T, Singh H, Kumar R, Singh H, Dhooria S, Takkar A, Mittal BR",
             "link": "https://pubmed.ncbi.nlm.nih.gov/40623123/",
-            "summary": "18F-FDG PET/CT能显示结节病典型及非典型多系统受累影像特征。"
+            "summary": "18F-FDG PET/CT显示结节病典型及非典型多器官受累影像模式，有助于诊断与鉴别。"
         },
         {
             "title": "Cutaneous sarcoidosis following complete remission of diffuse large B-cell lymphoma: a case report and literature review.",
@@ -402,7 +402,7 @@
             "date": "2026 Jun",
             "authors": "Yoshida S, Temmoku J, Saito K, Matsumoto H, Mukaiyama R, Suzuki E, Ogawa S, Sumichika Y, Asano T, Sato S, Hashimoto Y, Hakozaki M, Yamamoto T, Migita K, Shimojima Y",
             "link": "https://pubmed.ncbi.nlm.nih.gov/41160623/",
-            "summary": "皮肤结节病可在弥漫大B细胞淋巴瘤完全缓解后发生，需与淋巴瘤复发鉴别并依靠病理确诊。"
+            "summary": "皮肤结节病可于弥漫大B细胞淋巴瘤完全缓解后出现，需与淋巴瘤复发鉴别并依赖病理确诊。"
         },
         {
             "title": "[Cardiac sarcoidosis in 2026 : current perspectives].",
@@ -410,7 +410,7 @@
             "date": "2026 May 20",
             "authors": "Sritharan A, Hermann Kamani C, Lu H, Porretta AP, Demenegi C, Ribi C, Schwitter J, Prior JO, Pruvot E, Pascale P, Muller O, Monney P, Domenichini G",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42169528/",
-            "summary": "心脏结节病在系统性结节病患者中发生率为5%，需通过多模态影像（PET/CT和心脏MRI）提高诊断准确性。"
+            "summary": "2026年心脏结节病诊疗强调联合PET/CT及心脏MRI进行精准诊断和风险分层。"
         },
         {
             "title": "Multimodality Imaging in Inflammatory Cardiac Disease.",
@@ -418,15 +418,7 @@
             "date": "2026 May 20",
             "authors": "Mahmood A, Ramesh J, Patel DS, Naseem M, Shah RK, Pate H, Frishman WH, Aronow WS",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42157359/",
-            "summary": "多模态成像对心肌炎、结节病和心内膜炎的诊断与管理至关重要，其中MRI和PET在组织表征和活动性炎症检测中居核心地位。"
-        },
-        {
-            "title": "Ectopic co-expression of canonical and LINE1 and THE1A-exonizing IL23R transcripts in sarcoid myopathy.",
-            "journal": "J Hum Genet",
-            "date": "2026 Jun",
-            "authors": "Iida A, Funaguma S, Nishino I",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/41530547/",
-            "summary": "肉样瘤肌病中发现IL23R经典转录本及LINE1/THE1A外显子化的异常转录本共表达。"
+            "summary": "多模态成像（超声、MRI、CT、PET）协同评估以精准诊断和治疗炎症性心脏病。"
         },
         {
             "title": "Reversible Chronotropic Incompetence in Early Cardiac Sarcoidosis Assessed by Serial Exercise Echocardiography.",
@@ -434,7 +426,7 @@
             "date": "2026 May 27",
             "authors": "Katsui Y, Koitabashi N, Ishio J, Amanai S, Nagasaka T, Takama N, Kagami K, Obokata M, Ishii H",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42012423/",
-            "summary": "心脏结节病早期可逆性变时功能不全，糖皮质激素治疗可改善房室传导和运动耐量。"
+            "summary": "糖皮质激素可逆转早期心脏结节病引起的变时功能不全。"
         },
         {
             "title": "Drug-induced sarcoidosis-like reaction following IL-4/IL-13 receptor blockade by dupilumab.",
@@ -442,7 +434,7 @@
             "date": "2026 May 13",
             "authors": "Yasui K, Yashiro M",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42126659/",
-            "summary": "杜普利尤单抗可能通过扰乱Th1/Th2平衡引发罕见的药物性结节病样反应。"
+            "summary": "度普利尤单抗可能通过打破Th1/Th2平衡诱发罕见的肉瘤样反应，停药后多数预后良好。"
         },
         {
             "title": "When the lung is at risk: diagnosis, manifestations, and complications of pulmonary sarcoidosis.",
@@ -450,7 +442,15 @@
             "date": "2026 May 27",
             "authors": "Dhanani Z, Vorselaars AD, Gupta R, Spagnolo P",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42202746/",
-            "summary": "肺结节病常进展为肺纤维化、气道受累及肺动脉高压，需分级使用激素、免疫抑制剂与抗纤维化治疗。"
+            "summary": "肺结节病亚型可进展为肺纤维化、气道病变及肺动脉高压，诊断需影像与病理结合，治疗采用阶梯免疫抑制策略。"
+        },
+        {
+            "title": "Presumed sarcoid choroiditis: referral pathways, demographic characteristics and disease phenotypes.",
+            "journal": "J Ophthalmic Inflamm Infect",
+            "date": "2026 Jun 3",
+            "authors": "Trepatchayakorn S, Bernal-Morales C, Arpa C, Artiaga JCM, Petrushkin H",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42234296/",
+            "summary": "该研究表明超过半数脉络膜结节病患者转诊后符合国际结节病诊断标准。"
         },
         {
             "title": "Diagnosis and Management of Sarcoidosis-like Reaction in Adjuvant Immunotherapy: A Comprehensive Review and Clinical Implications.",
@@ -458,7 +458,7 @@
             "date": "2026 May 10",
             "authors": "Lee M, Cai Q, Wang J",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42193407/",
-            "summary": "辅助免疫治疗中肉瘤样反应可模拟肿瘤复发，需组织学鉴别以避免不必要的治疗中断。"
+            "summary": "辅助免疫治疗中结节病样反应易误诊为肿瘤复发，需优先病理鉴别。"
         },
         {
             "title": "Are Patients Who Have Sarcoidosis at Increased Risk of Adverse Postoperative Outcomes Following Total Knee Arthroplasty?",
@@ -466,7 +466,15 @@
             "date": "2026 Jul",
             "authors": "Astavans A, Agarwal S, DePalo J, Garcia D, Suresh S, Thakkar S",
             "link": "https://pubmed.ncbi.nlm.nih.gov/41177195/",
-            "summary": "结节病增加全膝关节置换术后并发症风险。"
+            "summary": "结论：结节病患者行全膝关节置换术后并发症风险更高，术前需评估。"
+        },
+        {
+            "title": "Can Systemic Sarcoidosis and Genetic Cardiomyopathy Coexist?",
+            "journal": "JACC Case Rep",
+            "date": "2026 Jun 3",
+            "authors": "Wagle AA, Gupta R, Karatela M, Murray B, Gilotra NA, Scheel PJ 3rd",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42233912/",
+            "summary": "基因性心肌病和系统性结节病可共存，但心脏影像特异性低，需个体化评估是否需免疫抑制治疗。"
         },
         {
             "title": "Diagnostic and management dilemmas in pulmonary hypertension.",
@@ -474,33 +482,17 @@
             "date": "2026 Apr",
             "authors": "Condliffe R, Aman J, Boucly A, Cerrone E, Jutant EM, Kovacs G, Meijboom LJ, Olsson KM, Park DH, Seferian A, Sitbon O, Vachiery JL, Vonk Noordegraaf A, Montani D, Nossent EJ",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42128486/",
-            "summary": "尽管有国际指南，肺高压的诊断与治疗仍面临10个实际困境，需结合临床经验解决。"
-        },
-        {
-            "title": "Overlap syndrome between sarcoidosis and Sjogren's disease presenting as hypopituitarism: case report and review of literature.",
-            "journal": "Endocr J",
-            "date": "2026 May 8",
-            "authors": "Iwamoto Y, Yoshimura N, Harada A, Fushimi Y, Okamoto Y, Kimura T, Shimoda M, Nakanishi S, Mizuta Y, Tsurui S, Matsumoto S, Koike Y, Nishimura T, Kaneto H",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42108094/",
-            "summary": "结节病与干燥综合征重叠可致全垂体功能减退，激素替代治疗后需警惕干燥综合征进展为间质性肺炎。"
+            "summary": "肺动脉高压诊疗中存在10大诊断与管理困境，需结合现有证据、指南及临床经验制定个体化方案。"
         }
     ],
     "ILD": [
-        {
-            "title": "Anticancer drug-induced interstitial lung disease: a critical appraisal of clinical practice guidelines and consensus statements.",
-            "journal": "Expert Opin Drug Saf",
-            "date": "2026 Jun",
-            "authors": "Zhang Y, Ma Z, Sun X, Zhang Y, Zhu M, Zhang S, Feng X, An Z",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/38323333/",
-            "summary": "抗肿瘤药物相关间质性肺病指南质量参差，尤其在类固醇方案推荐上缺乏一致。"
-        },
         {
             "title": "Osimertinib plus datopotamab deruxtecan in patients with EGFR-mutated advanced NSCLC after progression on first-line osimertinib: ORCHARD.",
             "journal": "Ann Oncol",
             "date": "2026 Jun",
             "authors": "Riess JW, Yu HA, Le X, de Langen AJ, Cho BC, Piotrowska Z, Hendriks LEL, Morabito A, Bonanno L, Brustugun OT, Halvorsen TO, Kim YJ, Marrone KA, Shiraishi Y, Goldman JW, Ambrose H, Smith PE, FraenkeI PG, Tang KH, Lehman JM, Goldberg SB",
             "link": "https://pubmed.ncbi.nlm.nih.gov/41780641/",
-            "summary": "奥希替尼联合Dato-DXd用于一线奥希替尼耐药后EGFR突变晚期NSCLC，客观缓解率36%-43%，中位无进展生存期9.5-11.7个月。"
+            "summary": "奥希替尼联合Dato-DXd用于EGFR突变晚期NSCLC一线奥希替尼进展后，客观缓解率约43%，中位无进展生存期约10个月。"
         },
         {
             "title": "Interstitial lung disease and the STING pathway.",
@@ -508,7 +500,15 @@
             "date": "2026 Jun 1",
             "authors": "Velu PP, Zhu G, Mackenzie KJ",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42222885/",
-            "summary": "STING免疫通路可能参与SAVI和COPA综合征的间质性肺病发病机制，但其对常见间质性肺病的意义尚不明确。"
+            "summary": "STING通路在罕见ILD综合征中起关键作用，但其对常见ILD的致病意义尚不明确。"
+        },
+        {
+            "title": "Anticancer drug-induced interstitial lung disease: a critical appraisal of clinical practice guidelines and consensus statements.",
+            "journal": "Expert Opin Drug Saf",
+            "date": "2026 Jun",
+            "authors": "Zhang Y, Ma Z, Sun X, Zhang Y, Zhu M, Zhang S, Feng X, An Z",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/38323333/",
+            "summary": "抗癌药物所致间质性肺病临床指南质量参差不齐，类固醇方案推荐不一致，亟需加强利益相关方参与度。"
         },
         {
             "title": "Izalontamab brengitecan (Iza-bren; BL-B01D1), a first-in-class EGFR-HER3 bispecific antibody-drug conjugate, for patients with EGFR-mutated NSCLC: pooled analysis of phase I and phase II trials.",
@@ -516,7 +516,7 @@
             "date": "2026 Jun",
             "authors": "Hong SD, Wang YS, Zhao HY, Zhao YY, Wang QM, Ma YX, Li YS, Huang Y, Yang YP, Fu ZM, Chen LK, Zhou F, Yang J, Li XY, Hou X, Zhou NN, Sun LH, Zhang GF, Cui JW, Wu L, Chen G, Zhang YX, Wang HY, Lv DQ, Shi JH, Jiang B, Li C, Li XL, Tang KJ, Yu Y, Ji YH, He ZY, Zhu Y, Zhu H, Xiao S, Zhou CC, Zhang L, Fang WF",
             "link": "https://pubmed.ncbi.nlm.nih.gov/41611210/",
-            "summary": "Izalontamab brengitecan治疗EGFR突变NSCLC患者总缓解率47.4%，安全性良好。"
+            "summary": "Iza-bren治疗EGFR突变NSCLC患者总缓解率47.4%，疾病控制率81.3%。"
         },
         {
             "title": "Pulmonary toxicity of immune-checkpoint inhibitors.",
@@ -524,15 +524,15 @@
             "date": "2026 Jun",
             "authors": "Mahiat C, Cadranel J, Fallet V, Meteye C, Gendarme S, Slomka J, Canellas A",
             "link": "https://pubmed.ncbi.nlm.nih.gov/41290116/",
-            "summary": "免疫检查点抑制剂相关肺炎虽罕见但可致命，需警惕高危人群并及时管理。"
+            "summary": "免疫检查点抑制剂相关性肺炎虽罕见但致命，需警惕高危人群并规范管理。"
         },
         {
-            "title": "Combined immunosuppressive therapy in systemic sclerosis-associated interstitial lung disease: phenotypes matter.",
-            "journal": "Autoimmun Rev",
-            "date": "2026 May 28",
-            "authors": "Marchetti M, Motta F, Tonutti A, Selmi C, De Santis M",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42214802/",
-            "summary": "联合免疫抑制治疗对特定表型的系统性硬化症相关间质性肺病有效。"
+            "title": "Lung-only involvement in STING-associated vasculopathy with onset in infancy: a diagnostic pitfall in the absence of cutaneous vasculitis.",
+            "journal": "Z Rheumatol",
+            "date": "2026 Jun",
+            "authors": "Kisla Ekinci RM, Cay U, Kor D, Telefon HA, Ekinci F, Horoz OO, Yildizdas D",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/41495372/",
+            "summary": "STING相关婴儿期起病的血管病仅累及肺部时，易因无皮肤血管炎表现而误诊。"
         },
         {
             "title": "Childhood Interstitial Lung Disease-Successful Application of a Stepwise Diagnostic Classification.",
@@ -540,7 +540,7 @@
             "date": "2026 May 21",
             "authors": "Rapp CK, Griese M",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42194933/",
-            "summary": "一项三步分类法成功应用于儿童间质性肺病，半数患儿可通过基因检测明确病因。"
+            "summary": "儿童间质性肺病可通过三步病因分类法明确诊断，遗传检测阳性率达50.8%。"
         },
         {
             "title": "Using Genetic Risk Scores for Rheumatoid Arthritis-Associated Interstitial Lung Disease Risk Stratification.",
@@ -556,15 +556,7 @@
             "date": "2026 May",
             "authors": "Marchi G, Fanni SC, Mercier M, Cefalo J, Salerni C, Ferioli M, Candoli P, Romei C, Gori L, Cucchiara F, Cenerini G, Guglielmi G, Pistelli F, Carrozzi L, Mondoni M",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42094223/",
-            "summary": "AI和影像组学可辅助早期识别及预测药物性间质性肺炎。"
-        },
-        {
-            "title": "Granulomatous-Lymphocytic Interstitial Lung Disease in Common Variable Immunodeficiency with a Rapid Progression and Refractory Infections.",
-            "journal": "Intern Med",
-            "date": "2026 May 30",
-            "authors": "Tokunaga R, Masunaga A, Koga M, Akaike K, Okabayashi H, Iyama S, Tomita Y, Ichiyasu H, Sakagami T",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42219311/",
-            "summary": "伴快速进展和难治性感染的普通变异性免疫缺陷病相关肉芽肿性淋巴细胞性间质性肺病（GLILD）病例对免疫球蛋白替代及免疫抑制治疗反应差，预后不良。"
+            "summary": "人工智能与影像组学在药物性间质性肺病的早期诊断和风险分层中显示出潜力，尤其有助于区分重叠成像模式。"
         },
         {
             "title": "Incidence of interstitial lung disease in seropositive rheumatoid arthritis patients receiving biologics, Janus kinase inhibitors, or methotrexate.",
@@ -572,7 +564,7 @@
             "date": "2026",
             "authors": "Yoon J, Han M, Song JJ, Lee SW, Jung I, Park YB",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42222657/",
-            "summary": "类风湿关节炎患者使用生物制剂或JAK抑制剂时，间质性肺病风险低于甲氨蝶呤。"
+            "summary": "抗风湿生物制剂或JAK抑制剂相比甲氨蝶呤不增加血清阳性类风湿关节炎患者间质性肺病风险。"
         },
         {
             "title": "Clinical features, pathogenesis, and treatment of anti-MDA5 antibody-positive interstitial lung disease.",
@@ -580,7 +572,7 @@
             "date": "2026 May 13",
             "authors": "Yamaguchi K",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42127706/",
-            "summary": "抗MDA5抗体阳性皮肌炎相关间质性肺病进展迅速，预后差，三联疗法可改善结局。"
+            "summary": "抗MDA5抗体阳性皮肌炎相关间质性肺病进展快、预后差，三联疗法改善结局但部分患者仍难治。"
         },
         {
             "title": "Mechanisms of Surfactant Maturation in Development and Disease.",
@@ -588,7 +580,7 @@
             "date": "2026 Jul 1",
             "authors": "Pranty AI, Cuevas Ocana S, Dickens JA",
             "link": "https://pubmed.ncbi.nlm.nih.gov/41364119/",
-            "summary": "肺表面活性物质成熟异常可导致从新生儿呼吸衰竭到成人间质性肺病等严重呼吸疾病。"
+            "summary": "该综述揭示肺表面活性物质成熟障碍可导致从新生儿呼吸衰竭到成人间质性肺病的系列疾病。"
         },
         {
             "title": "Cutaneous manifestations in myositis syndromes.",
@@ -596,7 +588,15 @@
             "date": "2026 May 26",
             "authors": "Schedler NC, Raheel O, de la Garza JAC, Edminister JR",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42191479/",
-            "summary": "特发性炎性肌病的特定皮疹与自身抗体、恶性肿瘤及间质性肺病风险相关。"
+            "summary": "肌炎综合征的皮肤表现与特定自身抗体、恶性肿瘤及间质性肺病风险相关。"
+        },
+        {
+            "title": "Combined immunosuppressive therapy in systemic sclerosis-associated interstitial lung disease: phenotypes matter.",
+            "journal": "Autoimmun Rev",
+            "date": "2026 May 28",
+            "authors": "Marchetti M, Motta F, Tonutti A, Selmi C, De Santis M",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42214802/",
+            "summary": "MMF联合生物制剂对炎症性、进展性SSc-ILD有效，需基于表型个体化治疗。"
         },
         {
             "title": "A machine learning-based classification model for interstitial lung disease in rheumatoid arthritis.",
@@ -604,7 +604,7 @@
             "date": "2026",
             "authors": "Li M, Wang Q, He J, Wang X, Xu Y, Yang L, Feng L",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42221109/",
-            "summary": "基于常规临床参数构建机器学习模型可有效分类类风湿关节炎相关间质性肺病。"
+            "summary": "基于常规临床参数开发的机器学习模型能有效分类类风湿关节炎相关间质性肺病。"
         },
         {
             "title": "Integrated machine learning risk model for predicting radiation pneumonitis in lung cancer patients with interstitial lung disease.",
@@ -612,7 +612,23 @@
             "date": "2026 Dec",
             "authors": "Lu H, Jiang A, Yuan Z, Chen D",
             "link": "https://pubmed.ncbi.nlm.nih.gov/41755502/",
-            "summary": "该研究构建的机器学习整合模型能有效预测肺癌合并间质性肺病患者的放射性肺炎风险。"
+            "summary": "该机器学习模型整合临床、剂量和炎症指标，能有效预测伴间质性肺病肺癌患者的放射性肺炎风险。"
+        },
+        {
+            "title": "Integrating interstitial lung abnormality detection into lung cancer screening: a mixed methods approach for care pathway development.",
+            "journal": "BMJ Open Respir Res",
+            "date": "2026 Jun 2",
+            "authors": "Kim DH, Dinculescu V, Tremblay A, Kaul B, Johannson KA, Grant-Orser A",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42230301/",
+            "summary": "在肺癌筛查中整合间质性肺异常检测并制定标准化诊疗路径，可提升早期肺病管理效果。"
+        },
+        {
+            "title": "Combination therapy with mycophenolate mofetil, nintedanib, and tocilizumab in a patient with progressive systemic sclerosis-associated interstitial lung disease : A case report and a literature review.",
+            "journal": "Z Rheumatol",
+            "date": "2026 Jun",
+            "authors": "Chen L, Li X, Huang D, Chen P, Xu P, Chen H, Zhang X",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/41784806/",
+            "summary": "MMF、尼达尼布和托珠单抗联合治疗可有效控制进行性系统性硬化症相关间质性肺病。"
         },
         {
             "title": "Early risk response to vasodilators and outcomes in interstitial lung disease associated pulmonary hypertension.",
@@ -620,31 +636,15 @@
             "date": "2026 May 25",
             "authors": "Teramachi R, Fukihara J, Ichihara S, Kataoka K, Takei R, Yamano Y, Watanabe F, Yokoyama T, Kimura T, Kondoh Y",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42184485/",
-            "summary": "血管扩张剂治疗后风险分层的变化可预测间质性肺病相关肺动脉高压患者的预后。"
+            "summary": "ILD-PH患者的四层风险分层在血管扩张剂治疗后的变化可预测无移植生存期。"
         },
         {
-            "title": "Imaging findings in pediatric interferonopathies.",
-            "journal": "Pediatr Radiol",
-            "date": "2026 May 23",
-            "authors": "Tsujioka Y, Nishimura G, Hattori S, Kim OH, Horne A, Kono T, Jinzaki M",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42176059/",
-            "summary": "儿童I型干扰素病影像学表现多样，包括脑病、血管病变及间质性肺病等特征性改变。"
-        },
-        {
-            "title": "Osimertinib-induced interstitial lung disease insights from faers signal detection and network toxicology analysis.",
-            "journal": "BMC Cancer",
-            "date": "2026 May 9",
-            "authors": "Zhang S, Liu J, Feng X, Feng R, Zhang J, Liu S, Lu Y",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42106642/",
-            "summary": "奥希替尼相关间质性肺病在老年、女性和亚洲患者中风险更高，需加强监测。"
-        },
-        {
-            "title": "Impact of Comorbid Interstitial Lung Abnormalities on Acute Exacerbations of COPD: A Hospital-Based Retrospective Cohort Study.",
-            "journal": "COPD",
-            "date": "2026 Dec",
-            "authors": "Li Y, Zhou C, Yu W, Yang M, Luo J, Chen X, Liu X, Mao B, Jiang H, Liu W",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/41704188/",
-            "summary": "合并间质性肺异常/肺纤维化/间质性肺病不独立增加慢阻肺急性加重住院死亡率，但提示病情更重、资源消耗更多。"
+            "title": "Granulomatous-Lymphocytic Interstitial Lung Disease in Common Variable Immunodeficiency with a Rapid Progression and Refractory Infections.",
+            "journal": "Intern Med",
+            "date": "2026 May 30",
+            "authors": "Tokunaga R, Masunaga A, Koga M, Akaike K, Okabayashi H, Iyama S, Tomita Y, Ichiyasu H, Sakagami T",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42219311/",
+            "summary": "一例常见变异性免疫缺陷病合并肉芽肿性淋巴细胞性间质性肺病，尽管给予免疫球蛋白及免疫抑制治疗，仍快速进展并死于感染。"
         }
     ]
 }
