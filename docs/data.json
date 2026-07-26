@@ -49,14 +49,6 @@
             "summary": "摘要缺失。"
         },
         {
-            "title": "Prophylactic quercetin administration attenuates pulmonary fibrosis via ferroptosis-resistant priming of alveolar epithelial cells.",
-            "journal": "Redox Rep",
-            "date": "2026 Dec",
-            "authors": "Qiao Y, Cheng X, Luo Z, Huang W, Zhang Z, Ren K, Xu X, He H, He M, Yin L",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/41697789/",
-            "summary": "AI 总结暂时不可用。"
-        },
-        {
             "title": "Preserving Lung Function in Idiopathic Pulmonary Fibrosis.",
             "journal": "N Engl J Med",
             "date": "2026 Jul 9",
@@ -86,14 +78,6 @@
             "date": "2026 Aug 1",
             "authors": "Han Y, Liu M, Xu W, Li Z, Jiang D, Geng J, Gao S, Li S, Xie B, Zhu L, Zhang H, Costabel U, Dai H, Wang C",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42143504/",
-            "summary": "AI 总结暂时不可用。"
-        },
-        {
-            "title": "Plasma CXCL13 and fibrosis biomarkers in COVID-19 compared with idiopathic pulmonary fibrosis.",
-            "journal": "Sci Rep",
-            "date": "2026 Jun 25",
-            "authors": "Gendron N, Rial C, Massonnaud CR, Nguyen A, Philippe A, Rus K, Nunes H, Sanchez O, Diehl JL, Peiffer-Smadja N, Hites M, Rancic J, Yazdanpanah Y, Mentre F, Ader F, Israel-Biet D, Espitia O, Smadja DM",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42350449/",
             "summary": "AI 总结暂时不可用。"
         },
         {
@@ -129,6 +113,14 @@
             "summary": "AI 总结暂时不可用。"
         },
         {
+            "title": "Prophylactic quercetin administration attenuates pulmonary fibrosis via ferroptosis-resistant priming of alveolar epithelial cells.",
+            "journal": "Redox Rep",
+            "date": "2026 Dec",
+            "authors": "Qiao Y, Cheng X, Luo Z, Huang W, Zhang Z, Ren K, Xu X, He H, He M, Yin L",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/41697789/",
+            "summary": "AI 总结暂时不可用。"
+        },
+        {
             "title": "MCT4 mediates hypoxia-induced extracellular lactate release from IPF fibroblasts.",
             "journal": "Am J Respir Cell Mol Biol",
             "date": "2026 Jul 1",
@@ -159,6 +151,14 @@
             "authors": "Bermudez J, Debray MP, Uzunhan Y, Marchand-Adam S, Nunes H, Godet C, Maitre T, Claustre J, Milesi J, Nasser M, Cottin V, Reynaud-Gaubert M, Crestani B",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42128186/",
             "summary": "AI 总结暂时不可用。"
+        },
+        {
+            "title": "SIRT6 activation attenuates inflammatory-fibrogenic events, improves lung function and survival in experimental pulmonary fibrosis.",
+            "journal": "Biochem Pharmacol",
+            "date": "2026 Aug",
+            "authors": "Ghosh M, Sharma N, Moulik S, Andugulapati SB",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/41916469/",
+            "summary": "AI 总结暂时不可用。"
         }
     ],
     "支气管镜": [
@@ -179,14 +179,6 @@
             "summary": "摘要缺失。"
         },
         {
-            "title": "Efficacy and safety of dexmedetomidine in adult patients undergoing bronchoscopy: A systematic review and meta-analysis.",
-            "journal": "Pak J Med Sci",
-            "date": "2026 Jul",
-            "authors": "Huang X, Li J, Zhang L, Du Y, Su H, Zuo J",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42487873/",
-            "summary": "AI 总结暂时不可用。"
-        },
-        {
             "title": "Endobronchial ultrasound-guided mediastinal biopsies for the diagnosis of mediastinal diseases: A network meta-analysis.",
             "journal": "Pulmonology",
             "date": "2026 Dec",
@@ -203,11 +195,11 @@
             "summary": "AI 总结暂时不可用。"
         },
         {
-            "title": "The Rise and Fall of Interventional Pulmonology Procedures: Lessons in Innovation, Evidence, and Abandonment.",
-            "journal": "Diagnostics (Basel)",
-            "date": "2026 Jun 25",
-            "authors": "Reinoso J, Ntiamoah P, Nathani A, Mehta AC",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42449763/",
+            "title": "Artificial Intelligence-Induced Deskilling in Interventional Pulmonology: An International Cross-Sectional Survey on Risk Perception and Mitigation Strategies.",
+            "journal": "Adv Respir Med",
+            "date": "2026 Jul 20",
+            "authors": "Marchi G, Corbetta L",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42496257/",
             "summary": "AI 总结暂时不可用。"
         },
         {
@@ -219,11 +211,11 @@
             "summary": "AI 总结暂时不可用。"
         },
         {
-            "title": "Artificial Intelligence-Induced Deskilling in Interventional Pulmonology: An International Cross-Sectional Survey on Risk Perception and Mitigation Strategies.",
-            "journal": "Adv Respir Med",
-            "date": "2026 Jul 20",
-            "authors": "Marchi G, Corbetta L",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42496257/",
+            "title": "Diagnostic yield of bronchoscopy in hemoptysis without radiological abnormalities: A retrospective cohort study.",
+            "journal": "Ann Thorac Med",
+            "date": "2026 Jul-Sep",
+            "authors": "Sogukpinar O, Akturk UA",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42494510/",
             "summary": "AI 总结暂时不可用。"
         },
         {
@@ -240,14 +232,6 @@
             "date": "2026 Aug 1",
             "authors": "Paterno DS, La Via L, Lo Giudice EC, Sorbello M",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42228499/",
-            "summary": "AI 总结暂时不可用。"
-        },
-        {
-            "title": "Diagnostic yield of bronchoscopy in hemoptysis without radiological abnormalities: A retrospective cohort study.",
-            "journal": "Ann Thorac Med",
-            "date": "2026 Jul-Sep",
-            "authors": "Sogukpinar O, Akturk UA",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42494510/",
             "summary": "AI 总结暂时不可用。"
         },
         {
@@ -280,6 +264,14 @@
             "date": "2026 Jul 1",
             "authors": "Oliveira B, Cheng Z, Guldbron LH, Konge L, Savarimuthu TR, Cold KM",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42080585/",
+            "summary": "AI 总结暂时不可用。"
+        },
+        {
+            "title": "Efficacy and safety of dexmedetomidine in adult patients undergoing bronchoscopy: A systematic review and meta-analysis.",
+            "journal": "Pak J Med Sci",
+            "date": "2026 Jul",
+            "authors": "Huang X, Li J, Zhang L, Du Y, Su H, Zuo J",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42487873/",
             "summary": "AI 总结暂时不可用。"
         },
         {
@@ -320,6 +312,14 @@
             "date": "2026 Aug",
             "authors": "Ring S, Bowen AJ, Griffin T, Ferguson JS, Dailey SH",
             "link": "https://pubmed.ncbi.nlm.nih.gov/41966683/",
+            "summary": "AI 总结暂时不可用。"
+        },
+        {
+            "title": "Decoding the Codes: A Comprehensive Guide to Interventional Pulmonology Current Procedural Terminology (CPT) Coding and Billing-Part 1: Compensation and Context of CPT Codes Effecting Interventional Pulmonology.",
+            "journal": "J Bronchology Interv Pulmonol",
+            "date": "2026 Jul 1",
+            "authors": "Patel NM, Desai NR, Cheng GZ, Musani A",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42349373/",
             "summary": "AI 总结暂时不可用。"
         }
     ],
@@ -405,14 +405,6 @@
             "summary": "AI 总结暂时不可用。"
         },
         {
-            "title": "Advanced imaging in sarcoidosis.",
-            "journal": "Curr Opin Pulm Med",
-            "date": "2026 Jul 24",
-            "authors": "Ampey M, Steinberger D, Perlman D",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42494222/",
-            "summary": "AI 总结暂时不可用。"
-        },
-        {
             "title": "Targeting CXCR6 suppresses granuloma formation and pulmonary fibrosis through inhibiting Th17 responses in sarcoidosis.",
             "journal": "Int Immunopharmacol",
             "date": "2026 Aug 1",
@@ -437,20 +429,20 @@
             "summary": "AI 总结暂时不可用。"
         },
         {
-            "title": "[Sarcoidosis-associated uveitis: Current status and future prospects].",
-            "journal": "Rev Med Interne",
-            "date": "2026 Jul 22",
-            "authors": "Seve P, El Jammal T, Serrar Y, Jamilloux Y, Kodjikian L, Jacquot R",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42486737/",
-            "summary": "AI 总结暂时不可用。"
-        },
-        {
             "title": "Current understanding of environmental exposures and sarcoidosis.",
             "journal": "Curr Opin Pulm Med",
             "date": "2026 Jul 17",
             "authors": "Mallozzi MB, Maier LA, Lin NW",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42471775/",
             "summary": "AI 总结暂时不可用。"
+        },
+        {
+            "title": "Hemifacial cutaneous sarcoidosis.",
+            "journal": "JAAD Case Rep",
+            "date": "2026 Aug",
+            "authors": "Aldossari A, BinMayouf M, Alfuraih I",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42499399/",
+            "summary": "摘要缺失。"
         },
         {
             "title": "Prevalence of relapse in pulmonary sarcoidosis: A systematic review and meta-analysis.",
@@ -469,20 +461,28 @@
             "summary": "AI 总结暂时不可用。"
         },
         {
-            "title": "Unilateral hilar sarcoidosis with anemia and low T3 syndrome: a case report.",
-            "journal": "Front Med (Lausanne)",
-            "date": "2026",
-            "authors": "Shui Y, Wang H, Wang S",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42487948/",
-            "summary": "AI 总结暂时不可用。"
-        },
-        {
             "title": "Toward Precision in Pulmonary Sarcoidosis: Lessons From CT Phenotyping.",
             "journal": "Chest",
             "date": "2026 Jul",
             "authors": "Mathias KR, Sharp M",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42419842/",
             "summary": "摘要缺失。"
+        },
+        {
+            "title": "Multiparametric Ultrasound Findings of Testicular Sarcoidosis.",
+            "journal": "J Ultrasound Med",
+            "date": "2026 Jul",
+            "authors": "Liu H, Abudalo R, Salahia G, Yusuf GT, Huang DY, Sidhu PS",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/41645844/",
+            "summary": "AI 总结暂时不可用。"
+        },
+        {
+            "title": "Advanced imaging in sarcoidosis.",
+            "journal": "Curr Opin Pulm Med",
+            "date": "2026 Jul 24",
+            "authors": "Ampey M, Steinberger D, Perlman D",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42494222/",
+            "summary": "AI 总结暂时不可用。"
         }
     ],
     "ILD": [
@@ -527,14 +527,6 @@
             "summary": "AI 总结暂时不可用。"
         },
         {
-            "title": "Efficacy, safety, and tolerability of treatments for interstitial lung disease associated with rtoid arthritis: A systematic review and network meta-analysis.",
-            "journal": "J Autoimmun",
-            "date": "2026 Aug",
-            "authors": "Hu Y, Gan Y, Tang M, Xie X, Zheng X, Luo X, Xiong A",
-            "link": "https://pubmed.ncbi.nlm.nih.gov/42322667/",
-            "summary": "AI 总结暂时不可用。"
-        },
-        {
             "title": "Predictors of rapidly progressive interstitial lung disease in anti-MDA5 dermatomyositis: a meta-analysis.",
             "journal": "Rheumatology (Oxford)",
             "date": "2026 Jun 30",
@@ -564,6 +556,14 @@
             "date": "2026 Jul",
             "authors": "Brooks RT, England BR, Kronzer VL, Crowson CS",
             "link": "https://pubmed.ncbi.nlm.nih.gov/42215625/",
+            "summary": "AI 总结暂时不可用。"
+        },
+        {
+            "title": "Diagnostic, prognostic and therapeutic biomarkers in rheumatoid arthritis.",
+            "journal": "Nat Rev Rheumatol",
+            "date": "2026 Aug",
+            "authors": "Szekanecz Z, Gunkl-Toth L, Szamosi S, van der Woude D, McInnes I, Nagy G",
+            "link": "https://pubmed.ncbi.nlm.nih.gov/42298194/",
             "summary": "AI 总结暂时不可用。"
         },
         {
